@@ -3,14 +3,14 @@ import { assertEquals } from 'https://deno.land/std@0.203.0/testing/asserts.ts';
 
 Clarinet.test({
   name: "notarize stores hash and owner",
-  async fn(chain: Chain, accounts: Mp<string, Account>) {
+  async fn(chain: Chain, accounts: Map<string, Account>) {
     const deployer = accounts.get('deployer')!;
     const user1 = accounts.get('wallet_1')!;
     const user2 = accounts.get('wallet_2')!;
 
     const hashHex = '0x' + '11'.repeat(32);
 
-    // user1 calls notarie
+    // user1 calls notarize
     let block = chain.mineBlock([Tx.contractCall('notary', 'notarize', [Tx.buff(hashHex)], user1.address)]);
     assertEquals(block.receipts.length, 1);
     assertEquals(block.receipts[0].result, '(ok true)');
