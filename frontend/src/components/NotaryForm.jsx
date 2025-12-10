@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { sha256 } from 'js-sha256'
 import { showConnect, makeSTXTokenTransfer } from '@stacks/connect'
 
-// NOTE: showConnect / makeSTXTokenTransfer API can vary by version. This code fo
+// NOTE: showConnect / makeSTXTokenTransfer API can vary by version. This code f
 
 export default function NotaryForm() {
   const [fileName, setFileName] = useState(null)
