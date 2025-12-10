@@ -1,0 +1,6 @@
+{
+  "name": "Decentralized Digital Notary",
+  "short_name": "Notary",
+  "start_url": "/",
+  "display": "standalone"
+}
