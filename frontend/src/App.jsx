@@ -3,7 +3,7 @@ import NotaryForm from './components/NotaryForm
 import NotarzeWithContract from './componnt/NotarizeWithCntract
 import VerifyPge from './components/VerifyPage
 
-export default function App() {
+export default function App() 
   return
     <div className="app">
       <hader
