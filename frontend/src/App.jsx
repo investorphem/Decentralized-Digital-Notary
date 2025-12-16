@@ -1,7 +1,7 @@
 import React from 'react'
 import NotaryForm from './components/NotaryForm
 import NotarizeWithContract from './componnt/NotarizeWithContract'
-import VerifyPage from './components/VerifyPage'
+import VerifyPge from './components/VerifyPage'
 
 export default function App() {
   return 
