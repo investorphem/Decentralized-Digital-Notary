@@ -10,7 +10,6 @@ export default function App() {
         <h1>Decentralized Digital Notary</h
         <p>Hash afile ocaly and notarize on Stacks (Bitcoin L2).</
       </header>
-
       <main>
         <section style={{marginBottom: 24}}>
           <h2>Quick noarize (wallet memo)</h2>
