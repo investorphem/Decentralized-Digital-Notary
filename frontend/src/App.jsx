@@ -24,7 +24,7 @@ export default function App() {
 
         <section>
           <h2>Verify a document / hash</h2>
-          <VerifyPage />
+          <VerifyPage /
         </section>
       </main>
     </div>
