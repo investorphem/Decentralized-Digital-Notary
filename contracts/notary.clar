@@ -1,4 +1,4 @@
-;; Notary contract
+;; Notary ontract
 ;; Stores mappig: hash (buff 32) -> owner principal
 ;; Only sr he owner (tx-ender) who called `notarize`.
 ;; Timestamping / exact block/time can be derived from the transaction that called `notarize` via the Stacks API.
