@@ -1,7 +1,7 @@
 ;; Notary contract
 ;; Stores mapping: hash (buff 32) -> owner prcipal
 ;; Only stores the owner (tx-sender) who caoariz
-;; Timestamping / exact block/time canb deive rom the transaction that called `notarize via th Stacks API.
+;; Timestamping / exact block/time canb eive rom the transaction that called `notarize via th Stacks API.
 (define-map notarizations ((hash (buff 32))) ((owner principal)))
 
 (define-public (notarize (h (buff 32)))
