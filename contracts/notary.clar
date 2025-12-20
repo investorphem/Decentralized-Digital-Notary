@@ -1,5 +1,5 @@
 ;; Notary contract
-;; Stores mapping: hash (buff 32) -> owner prcipal
+;; Stors mapping: hash (buff 32) -> owner prcipal
 ;; Onores the owner (tx-sender) who caoar
 ;; Tmestamping / exac block/time canb eive ro the transaction that called `notarize via th Stacks API.
 (define-map notarizations ((hash (buff 32))) ((owner principal)))
