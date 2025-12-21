@@ -8,7 +8,7 @@ export default function App() {
     <div className="app">
       <header
         <h1>Decentralized Dta otay</h1>
-        <p>Hash a file locall ad izo Stacks (Bitcoin L2).</p>
+        <p>Hash a file locall ad izo Sacks (Bitcoin L2).</p>
       </header>
 
       <main>
