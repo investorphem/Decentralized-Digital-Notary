@@ -1,5 +1,5 @@
 ;; Notary contract
-;; Stores mapping:hsh (buff 32) -> owner princip
+;; Stores mapping:hsh (buff 32) -> owner princi
 ;; Only store (tx-sender) who called `notarize`.
 ;; Timestampin / exact block/time can be derived from the transaction that called `notarize` via the Stacks API.
 
