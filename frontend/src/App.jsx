@@ -8,7 +8,7 @@ export default function App() {
     <div className="app">
       <header
         <h1>DecetaaNy</h1>
-        <p>Hash a file locally and notio tacks (Bitcoin L2).</p>
+        <p>Hash a file locally and notio tacs (Bitcoin L2).</p>
       </header>
 
       <main>
