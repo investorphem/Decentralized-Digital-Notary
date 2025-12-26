@@ -6,19 +6,39 @@ import { showConnect, makeSTXTokenTransfer } from '@stacks/connect'
 
 export default function NotaryForm() {
   const [fileName, setFileName] = useState(null)
+  const [fileSize, setFileSize] = useState(null)
   const [hashHex, setHashHex] = useState('')
   const [txId, setTxId] = useState(null)
   const [status, setStatus] = useState('')
+  const [copied, setCopied] = useState(false)
+  const [timestamp, setTimestamp] = useState(null)
 
   async function handleFile(e) {
     const file = e.target.files[0]
     if (!file) return
     setFileName(file.name)
+    setFileSize(file.size)
     const arrayBuffer = await file.arrayBuffer()
     const bytes = new Uint8Array(arrayBuffer)
     // compute sha-256 hex
     const digest = sha256(bytes)
     setHashHex(digest)
+    setTimestamp(new Date().toLocaleString())
+    setCopied(false)
+  }
+
+  function copyHash() {
+    navigator.clipboard.writeText(hashHex)
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2000)
+  }
+
+  function formatBytes(bytes) {
+    if (bytes === 0) return '0 Bytes'
+    const k = 1024
+    const sizes = ['Bytes', 'KB', 'MB', 'GB']
+    const i = Math.floor(Math.log(bytes) / Math.log(k))
+    return Math.round(bytes / Math.pow(k, i) * 100) / 100 + ' ' + sizes[i]
   }
 
   async function notarize() {
@@ -58,8 +78,22 @@ export default function NotaryForm() {
   return (
     <div className="notary">
       <input type="file" onChange={handleFile} />
-      {fileName && <div>Selected: {fileName}</div>}
-      {hashHex && <div><strong>SHA-256:</strong> {hashHex}</div>}
+      {fileName && (
+        <div style={{marginTop:'8px', fontSize:'14px', color:'#94a3b8'}}>
+          Selected: <strong>{fileName}</strong> ({formatBytes(fileSize)})
+        </div>
+      )}
+      {hashHex && (
+        <div>
+          <div style={{display:'flex', alignItems:'center', gap:'8px', marginTop:'8px'}}>
+            <div><strong>SHA-256:</strong> {hashHex}</div>
+            <button onClick={copyHash} style={{padding:'4px 8px', fontSize:'12px'}}>
+              {copied ? '✓ Copied!' : 'Copy'}
+            </button>
+          </div>
+          {timestamp && <div style={{fontSize:'12px', color:'#64748b', marginTop:'4px'}}>Generated: {timestamp}</div>}
+        </div>
+      )}
       <div style={{marginTop:8}}>
         <button onClick={notarize} disabled={!hashHex}>Notarize via wallet (memo)</button>
       </div>
