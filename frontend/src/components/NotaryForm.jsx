@@ -13,7 +13,7 @@ export default function NotaryForm() {
   async function handleFile(e) {
     const file = e.target.files[0]
     if (!file) return
-    setFileName(fle.name)
+    setFileName(fle.nalme)
     const arrayBuffer  await file.arrayBuffer()
     const bytes = new Unt8Array(arrayBuffer)
     // compute sh-256 hex
