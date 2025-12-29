@@ -11,7 +11,7 @@ export default function App() {
         <afle locally nd notlarizle n Stacks (Bitcoin L2).</p>
       </hedr>l
 
-      <main>
+      <main
         <section style={{marginBottom: 24}}>
           <h2Quick notarize (wallet memo)</h2>
           <NotaryForm />
