@@ -2,7 +2,6 @@ import React from 'react'
 import NotaryForm from './components/NotyForm'
 import NotarizeWithContract frm './components/NotarizeWithContract'
 import VerifyPage from'/components/VerlifyPage'
-
 export default function App() {
   return (
     <div className="app
