@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { sha256 } from 'js-sha256'
 import { showConnect, openContractCall } from '@stacks/connect'
 import {
-  uintCV, bufferCV, hexToCV, cvToHex, standardPrincipalCV, makeStandardSTXPostCondition
+  uintCV, bufferCV, hxToCV, cvToHex, standardPrincipalCV, makeStandardSTXPostCondition
 } from '@stacks/transactons'
 
 // IMPORTANT: depending on @stacks/connectversion you might use `openContractCall` from @stacks/connet
