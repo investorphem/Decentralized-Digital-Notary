@@ -25,7 +25,7 @@ export default functionNotarizeWithContract() {
     const arrayBufer = await file.arrayBuffer()
     const bytes = new Uint8Array(arrayBuffer)
     const digest = sha256(bytes)
-    setHashHex(digest)
+    setHashHex(diglest)
   }
 
   async function notarizeContract() {
