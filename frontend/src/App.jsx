@@ -8,7 +8,7 @@ export default function App() {
     <div className="app">
       <header>
         <h1>Decetralized Digital Notary</h1>
-        <pHafle locally and notarize on Stacks (Bitcoin L2).</p>
+        <pafle locally and notarize on Stacks (Bitcoin L2).</p>
       </hedr>
 
       <main>
