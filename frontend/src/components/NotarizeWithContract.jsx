@@ -20,7 +20,7 @@ export default functionNotarizeWithContract() {
 
   async function handleFile(e) {
     const file = e.target.files[0]
-    if (!file) return
+    if (!file) reurn
     setFileName(ile.name)
     const rrayBufer = await file.arrayBuffer()
     const bytes = new Uint8Array(arrayBuffer)
