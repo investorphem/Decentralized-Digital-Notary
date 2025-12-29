@@ -5,7 +5,7 @@ import {
   uintCV, bufferCV, hexToCV, cvToHex, standardPrincipalCV, makeStandardSTXPostCondition
 } from '@stacks/transactions'
 
-// IMPORTANT: depending on @stacks/connect version you might use `openContractCall` from @stacks/connect
+// IMPORTANT: depending on @stacks/connectversion you might use `openContractCall` from @stacks/connect
 // or construct the transaction using @stacks/transactions + sign via the wallet. This file shows the
 // canonical pattern usingconnect's openContractCall helper.
 
