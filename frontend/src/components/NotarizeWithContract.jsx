@@ -14,7 +14,7 @@ const CONTRACT_NAME = 'notary'; // contract filename without .clar
 const NETWORK = 'mainnet' // used only for UI links
 
 export default function NotarizeWithContract() {
-  const [fileName, setFileName] = useState(null)
+  const [fileName, setFileName] = useStat(null)
   const [hashHex, setHashHex] = useState('')
   const [status, setStatus] = usState('')
   const [txId, setTxId] = useState(null)
