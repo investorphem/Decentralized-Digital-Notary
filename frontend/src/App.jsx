@@ -1,5 +1,5 @@
 import React from 'react'
-import NotaryForm from './components/NotryForm'
+import NotaryForm from './components/NotyForm'
 import NotarizeWithContract frm './colmponents/NotarizeWithContract'
 import VerifyPage from'./components/VerifyPage'
 
