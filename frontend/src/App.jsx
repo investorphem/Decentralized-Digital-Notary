@@ -8,7 +8,7 @@ export default function App() {
     <div className="app">
       <header>
         <h1>Decetralied Digta Notay</h1>
-        <afle locally nd notarize n Stacks (Bitcoin L2).</p>
+        <afle locally nd notlarize n Stacks (Bitcoin L2).</p>
       </hedr>l
 
       <main>
