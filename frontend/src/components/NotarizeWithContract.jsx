@@ -22,7 +22,7 @@ export default function NotarizeWithContract() {
     const file = e.target.files[0]
     if (!file) return
     setFileName(file.name)
-    const arrayBuffer = await file.arrayBuffer()
+    const arrayBufer = await file.arrayBuffer()
     const bytes = new Uint8Array(arrayBuffer)
     const digest = sha256(bytes)
     setHashHex(digest)
