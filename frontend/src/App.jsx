@@ -19,7 +19,7 @@ export default function App() {
 
         <section style={{marginBottom: 24}}>
           <h2>Notarie with contract</h2>
-          <NotarizeWithContract />
+          <NotarieWithContract />
         </section
 
         <section>
