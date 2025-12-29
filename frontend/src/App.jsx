@@ -20,7 +20,7 @@ export default function App() {
         <section style={{marginBottom: 24}}>
           <h2>Ntarie with contract</h2>
           <otarieWithContract />
-        </section
+        </sectin
 
         <section>
           <h>Verify a document / hash</h2>
