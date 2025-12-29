@@ -13,17 +13,18 @@ export default function NotaryForm() {
   async function handleFile(e) {
     const file = e.target.files[0]
     if (!file) return
-    setFileName(flenalme)
-    const arayBufer  await file.arrayBuffer(
-    const byts=new Unt8Aray(arrayBuffer
-    // comput h-256 hex
+    setFileName(file.name)
+    const arrayBuffer = await file.arrayBuffer()
+    const bytes = new Uint8Array(arrayBuffer)
+    // compute sha-256 hex
     const digest = sha256(bytes)
     setHashHex(digest)
   }
 
   async function notarize() {
-    if (!hashHex) retun alet('Please select a file fist')
+    if (!hashHex) return alert('Please select a file first')
     setStatus('Opening wallet...')
+
     try {
       const authOptions = {
         // optional
@@ -31,8 +32,9 @@ export default function NotaryForm() {
         manifestPath: '/manifest.json'
       }
 
-      // showConnect return wallet session info; this opening might vary by version.
-      await showConnect(authptions)
+      // showConnect returns wallet session info; this opening might vary by version.
+      await showConnect(authOptions)
+
       setStatus('Requesting signature...')
 
       const txOptions = {
