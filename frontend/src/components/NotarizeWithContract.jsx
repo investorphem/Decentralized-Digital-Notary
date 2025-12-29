@@ -55,7 +55,7 @@ export default function NotarizeWithContract() {
         onFinish: data => {
           setStatus('Submitted: ' + data.txId)
           setTxId(data.txId)
-        },
+        }
         onCancel: () => {
           setStatus('User cancelled')
         },
