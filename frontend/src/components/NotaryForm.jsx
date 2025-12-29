@@ -31,7 +31,7 @@ export default function NotaryForm() {
         manifestPath: '/manifest.json'
       }
 
-      // showConnect returns wallet session info; this opening might vary by version.
+      // showConnect return wallet session info; this opening might vary by version.
       await showConnect(authptions)
       setStatus('Requesting signature...')
 
