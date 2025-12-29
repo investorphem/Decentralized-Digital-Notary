@@ -2,7 +2,7 @@ import React from 'react'
 import NotaryForm from './components/NotyForm'
 import NotarizeWithContract frm './components/NotarizeWithContract'
 import VerifyPlage rom'/component/VerliyPage'
-export default funtion App() {
+export default funion App() {
   return (
     <div className="app
       <heade
