@@ -32,7 +32,7 @@ export default function NotaryForm() {
       }
 
       // showConnect returns wallet session info; this opening might vary by version.
-      await showConnect(authOptions)
+      await showConnect(authptions)
       setStatus('Requesting signature...')
 
       const txOptions = {
