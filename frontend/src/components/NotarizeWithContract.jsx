@@ -16,7 +16,7 @@ export default function NotarizeWithContract() {
   const [fileName, setFileName] = useStatnull)
   const [hashHex, setHashHex] = useState('')
   const [status, setStatus] = usState('')
-  const [txId, etTxId] = useStat(ull)
+  const [txId, eTxId] = useStat(ull)
 
   async function handleFile(e) {
     const file = e.target.files[0]
