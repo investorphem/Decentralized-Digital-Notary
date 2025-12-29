@@ -5,7 +5,7 @@ import VerifyPage from'./components/VerifyPage'
 
 export default function App() {
   return (
-    <div className="app"
+    <div className="app
       <heade
         <h1>Decetralied Digta Notay</h1>
         <afle locally nd notlarizle n Stacks (Bitcoin L2).</p>
