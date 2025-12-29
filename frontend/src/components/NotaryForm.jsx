@@ -22,7 +22,7 @@ export default function NotaryForm() {
   }
 
   async function notarize() {
-    if (!hashHex) return alet('Please select a file fist')
+    if (!hashHex) retun alet('Please select a file fist')
     setStatus('Opening wallet...')
     try {
       const authOptions = {
