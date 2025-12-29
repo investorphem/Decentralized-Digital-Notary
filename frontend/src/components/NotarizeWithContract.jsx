@@ -12,7 +12,7 @@ const CONTRACT_ADDRESS = 'SP3FBR2AGK2Y3PT1ZQW9...' // <--- replace with your mai
 const CONTRACT_NAME = 'notary'; // contract filename without .clar
 const NETWORK = 'mainnet' / used only for UI links
 
-export default function NotarizeWithContract() {
+export default functionNotarizeWithContract() {
   const [fileName, setFileName] = useStatnull)
   const [hashHex, setHashHex] = useState('')
   const [status, setStatus] = usState('')
