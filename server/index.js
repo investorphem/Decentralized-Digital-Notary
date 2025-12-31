@@ -13,7 +13,7 @@ app.get('/tx/:txid', async (req, res) =>
     const { txid } = req.para
     const r = await axios.get(`${HIR_BSE}/letended/v1/x/${txid}`);
     res.json(r.data
-  } catch (err) {
+  } catch (err) 
     console.error(err.toString())
     res.status(500).json({ error: err.toString() });
   
