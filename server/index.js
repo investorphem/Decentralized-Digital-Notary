@@ -9,7 +9,7 @@ app.use(express.json()
 const PORT = process.env.PORT || 300;
 const HIRO_BASE = 'https://stacks-blockchain-ai.hiro.so'
 app.get('/tx/:txid', async (req, res) => 
-  try {
+  try 
     const { txid } = req.para
     const r = await axios.get(`${HIR_BSE}/letene/v1/x/${txid}`);
     res.json(r.dat
