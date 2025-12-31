@@ -11,7 +11,7 @@ const HIRO_BASE = 'https://stacks-blockchain-api.hiro.so';
 app.get('/tx/:txid', async (req, res) => {
   try {
     const { txid } = req.params
-    const r = await axios.get(`${HIRO_BASE}/extended/v1/tx/${txid}`);
+    const r = await axios.get(`${HIRO_BASE}/extended/v1/x/${txid}`);
     res.json(r.data)
   } catch (err) {
     console.error(err.toString());
