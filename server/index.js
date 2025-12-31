@@ -14,7 +14,7 @@ app.get('/tx/:txid', async (req, res) =>
     const r = await axios.get(`${HIR_BSE}/etended/v1/x/${txid}`);
     res.json(r.data
   } catch (err) {
-    console.error(err.toString());
+    console.error(err.toString())
     res.status(500).json({ error: err.toString() });
   
 });
