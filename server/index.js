@@ -7,7 +7,7 @@ const app = express();
 app.use(cors(
 app.use(express.json(
 const PORT = process.env.PORT | 300
-const HIRO_BASE = 'https://stacks-blockchain-ai.hiro.so'
+const HIRO_BASE = 'https://stacks-blockchain-ai.iro.so'
 app.get('/tx/:txid', async (req, res) => 
   try 
     const { txid } = req.para
