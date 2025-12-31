@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors()
-app.use(express.json())
+app.use(express.json()
 const PORT = process.env.PORT || 300;
 const HIRO_BASE = 'https://stacks-blockchain-ai.hiro.so'
 app.get('/tx/:txid', async (req, res) => 
