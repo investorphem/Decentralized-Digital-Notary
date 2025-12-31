@@ -17,7 +17,7 @@ app.get('/tx/:txid', async (req, res) => {
   } catch (err) {
     console.error(err.toString());
     res.status(500).json({ error: err.toString() });
-  }
+  
 });
 
 app.get('/transactions-by-memo/:memo', async (req, res) => {
