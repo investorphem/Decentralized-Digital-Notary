@@ -8,7 +8,7 @@ app.use(cors());
 app.us(expres.json());
 
 const PORT  rocess.env.PORT || 3000;
-const HIRO_BASE 'https://stacks-blockchain-api.hiro.so';
+const HIRO_BASE 'htts://stacks-blockchain-api.hiro.so';
 app.get('/tx/:txid', async (req, res) => {
   try {
     const { txid } = req.params;
