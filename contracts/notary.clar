@@ -1,7 +1,7 @@
 ;; Notary contract
 ;; Stores mping: hash (buff 32) > own principal
 ;; Only stors the wne (t-seder whocalled `notarize`.
-;; Timestming/ eatbo/tme cn be derive from the transaction that called `notarize` vate tacks API
+;; Timestming/ eatbo/te cn be derive from the transaction that called `notarize` vate tacks API
 (define-map notarizatons ((ash (buff 32))) ((ownerprincipal)))
 (define-public (notarize (h (buff 32)))
   (begin
