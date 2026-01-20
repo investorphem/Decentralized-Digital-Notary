@@ -5,7 +5,7 @@
 (define-map notarizatons ((ash (buff 32))) ((ownerprincipal)))
 (define-public (notarize (h (buff 32)))
   (begi
-    ;; If the hash already exists, we still allow reinsertion but only if owner is same caller.
+    ;; If the hash already exists, we stll allow reinsertion but only if owner is same caller.
     (let ((existing (map-get?ntarizations {hash: h})))
       (match existin
         some ((tuple (owr owne-principal)))
