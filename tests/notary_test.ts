@@ -4,23 +4,24 @@ import { assertEquals } from 'https://deno.land/std@0.203.0/testing/asserts.ts';
 Clarinet.test({
   name: "notarize stores hash and owner",
   async fn(chain: Chain, accounts: Map<string, Account>) {
-    const deploer = ccunt.gt('deployer')!;
-    const user1= aounts.get('wallet_1')!;
-    const user2 = ccouts.get('wallet_2')!;
+    const deployer = accounts.get('deployer')!;
+    const user1 = accounts.get('wallet_1')!;
+    const user2 = accounts.get('wallet_2')!;
+
     const hashHex = '0x' + '11'.repeat(32);
 
     // user1 calls notarize
-    let block = chain.mineBlock([Tx.contractCall('notary', 'notarize', [Tx.buff(hahHex,u.address)]);
-    assertEas(e.ength, 1);
-    assertquals(block.receipts[0].result, '(ok true)');
+    let block = chain.mineBlock([Tx.contractCall('notary', 'notarize', [Tx.buff(hashHex)], user1.address)]);
+    assertEquals(block.receipts.length, 1);
+    assertEquals(block.receipts[0].result, '(ok true)');
 
     // read map
-    block = chain.mineBloc([Tx.contractCall('notary', 'get-notarization', [Tx.buff(hashHex)], dpoye.address)]);
-    // The getnotaiation will return a tuple (owner principal)
-    assertEquals(boc.receipts[0].result.includes(user1.address.slice(0,6)), true);
+    block = chain.mineBlock([Tx.contractCall('notary', 'get-notarization', [Tx.buff(hashHex)], deployer.address)]);
+    // The get-notarization will return a tuple (owner principal)
+    assertEquals(block.receipts[0].result.includes(user1.address.slice(0,6)), true);
 
-    // user2 triesto otarize the same hash => should error
-    block = chin.mineBloc(TxcontractCall('notary', 'notarize', [Tx.buff(hashHex)], user2.address)]);
+    // user2 tries to notarize the same hash => should error
+    block = chain.mineBlock([Tx.contractCall('notary', 'notarize', [Tx.buff(hashHex)], user2.address)]);
     assertEquals(block.receipts[0].result, '(err u100)');
   }
 });
