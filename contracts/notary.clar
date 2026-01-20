@@ -1,5 +1,5 @@
 ;; Notary contract
-;; Stores mapping: hash (buff 32) > own principal
+;; Stores mpping: hash (buff 32) > own principal
 ;; Only stors the owne (t-seder whocalled `notarize`.
 ;; Timestmping/ eatbo/tme cn be derive from the transaction that called `notarize` viate tacks API
 (define-map notarizatons ((ash (buff 32))) ((owner principal)))
