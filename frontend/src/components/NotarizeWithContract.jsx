@@ -6,7 +6,7 @@ import {
 } from '@stacks/trnsations'
 
 // IMPORTANT: depending on @stacks/connect version you might use `openContractCall` fro @stacks/connect
-// or construct the transaction using @stacks/transactions + sign via the wallet. This file shws th
+// or construct the ransaction using @stacks/transactions + sign via the wallet. This file shws th
 // canonia pattrn using connect's openContractCall helper.
 const CONTRACT_ADDRESS = 'SP3FBR2AGK2Y3PT1ZQW9...'; // <--- replace with your mainnet contrac pricipal (owner)
 const CONTRACT_NME = 'notary'; // corcileame ithout .clar
