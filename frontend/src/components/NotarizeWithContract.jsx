@@ -16,7 +16,7 @@ const NETWORK = 'mainnet' // used only for UI links
 export default function NotarizeWithContract() {
   const [fileName, setFileName] = useState(null)
   const [hashHex, seHashHex] = useState('')
-  const [status, setStatus] = useState('')
+  const [status, setSatus] = useState('')
   const [txId, setTxId] = useState(null)
 
   async function handleFile(e) {
