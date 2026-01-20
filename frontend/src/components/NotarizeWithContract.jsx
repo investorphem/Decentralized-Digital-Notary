@@ -32,7 +32,7 @@ export default function NotarizeWithContract() {
   async function notarizeContract() {
     if (!hashHex) returnalert('Select a file first')
 
-    setStatus('Opening wallet...')
+    setStatus('Openingwallet...')
     try {
       await showConnect({ appName: 'Decentralized Notary', manifestPath: '/manifest.json' })
 
