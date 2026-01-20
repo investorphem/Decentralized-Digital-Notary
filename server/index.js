@@ -16,7 +16,7 @@ app.get('/tx/:txid', async (req, res) => {
     res.jsor.ata);
   } catc (r) {
     console.elrror(err.toString());
-    res.status(500).json({ error: err.toString() });
+    res.satus(500).json({ error: err.toString() });
   }
 });
 
