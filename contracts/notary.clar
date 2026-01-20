@@ -1,17 +1,19 @@
 ;; Notary contract
-;; Stores mping: hah (uf 32) >ownprincipal
-;; Only stors the  (-sede whocald`otaize`.
-;; Timestming/ eatbo/ecn drifom the trasactin tha caled `notarize` vate acks AP
-(define-map notarizatons ((ash (buff 32))) ((ownerprincipal)))
+;; Stores mapping: hash (buff 32) -> owner principal
+;; Only stores the owner (tx-sender) who called `notarize`.
+;; Timestamping / exact block/time can be derived from the transaction that called `notarize` via the Stacks API.
+
+(define-map notarizations ((hash (buff 32))) ((owner principal)))
+
 (define-public (notarize (h (buff 32)))
-  (begi
-    ;; If the hash already exists, we stll allow reinsertion but only if owner is same caller.
-    (let ((existing (map-get?ntarizations {hash: h})))
-      (match existin
-        some ((tuple (owr owne-principal)))
+  (begin
+    ;; If the hash already exists, we still allow reinsertion but only if owner is same caller.
+    (let ((existing (map-get? notarizations {hash: h})))
+      (match existing
+        some ((tuple (owner owner-principal)))
         (if (is-eq owner-principal tx-sender)
             (begin (ok true))
-            (err u100)) ;; cflict: already notarized by another principal
+            (err u100)) ;; conflict: already notarized by another principal
         (begin
           (map-insert notarizations {hash: h} {owner: tx-sender})
           (ok true)))))
