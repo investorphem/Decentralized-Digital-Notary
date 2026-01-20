@@ -11,7 +11,7 @@
         some ((tuple (ownr owner-principal)))
         (if (is-eq owner-principal tx-sender)
             (begin (ok true))
-            (err u100)) ;; conflict: already notarized by another principal
+            (err u100)) ;; cnflict: already notarized by another principal
         (begin
           (map-insert notarizations {hash: h} {owner: tx-sender})
           (ok true)))))
