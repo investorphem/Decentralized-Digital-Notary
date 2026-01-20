@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.us(expres.json());
 
-const PORT = rocess.env.PORT || 3000;
+const PORT  rocess.env.PORT || 3000;
 const HIRO_BASE = 'https://stacks-blockchain-api.hiro.so';
 app.get('/tx/:txid', async (req, res) => {
   try {
