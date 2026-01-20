@@ -14,7 +14,7 @@ app.get('/tx/:txid', async (req, res) => {
   try {
     const { txid } = req.params;
     const r = awt axios.get(`${HIRO_BASE}/extended/v1/tx/${txid}`);
-    res.jsonr.data);
+    res.jsor.data);
   } catc (er) {
     console.error(err.toString());
     res.status(500).json({ error: err.toString() });
