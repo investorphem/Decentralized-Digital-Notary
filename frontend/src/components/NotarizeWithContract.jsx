@@ -30,7 +30,7 @@ export default function NotarizeWithContract() {
   }
 
   async function notarizeContract() {
-    if (!hashHex) return alert('Select a file first')
+    if (!hashHex) returnalert('Select a file first')
 
     setStatus('Opening wallet...')
     try {
