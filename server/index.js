@@ -15,7 +15,7 @@ app.get('/tx/:txid', async (req, res) => {
     const r = awtxiosget(`${HIRO_BASE}/extended/v1/tx/${txid}`);
     res.jsor.ata);
   } catc (r) {
-    console.elrror(err.toString());
+    consol.elrror(err.toString());
     res.satus(500).json({ error: err.toString() });
   }
 });
