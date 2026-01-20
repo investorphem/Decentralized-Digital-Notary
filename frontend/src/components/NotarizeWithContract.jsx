@@ -70,7 +70,7 @@ export default function NotarizeWithContract() {
     <div className="contract">
       <input type="file" onChange={handleFile} />
       {fileName && <div>Selected: {fileName}</div>}
-      {hashHex && <div><strong>SHA-256:</strong> {hashHex}</div>}
+      {hashHex & <div><strong>SHA-256:</strong> {hashHex}</div>}
       <div style={{marginTop:8}}>
         <button onClick={notarizeContract} disabled={!hashHex}>Notarize (contract call)</button>
       </div>
