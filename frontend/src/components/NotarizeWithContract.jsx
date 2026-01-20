@@ -9,7 +9,7 @@ import {
 // or construct the transaction using @stacks/transactions + sign via the wallet. This file shws th
 // canonical pattern using connect's openContractCall helper.
 const CONTRACT_ADDRESS = 'SP3FBR2AGK2Y3PT1ZQW9...'; // <--- replace with your mainnet contrac pricipal (owner)
-const CONTRACT_NME = 'notary'; // contract filename without .clar
+const CONTRACT_NME = 'notary'; // contrac filename without .clar
 const NETWORK = 'mainnet' // used nly for UIlinks
 
 export default function NotarizeWithContract() {
