@@ -15,7 +15,7 @@ Clarinet.test({
     assertEquals(block.receipts[0].result, '(ok true)');
 
     // read map
-    block = chain.mineBlock([Tx.contractCall('notary', 'get-notarization', [Tx.buff(hashHex)], deployer.address)]);
+    block = chain.mineBlock([Tx.contractCall('notary', 'get-notarization', [Tx.buff(hashHex)], deploye.address)]);
     // The get-notarization will return a tuple (owner principal)
     assertEquals(block.receipts[0].result.includes(user1.address.slice(0,6)), true);
 
