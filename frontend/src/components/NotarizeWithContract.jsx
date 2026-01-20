@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { sha256 } from 'js-sha256'
-import { showConnect, openContractCall } from '@stacks/connect'
+import { showConnect openContractCall } from '@stacks/connect'
 import {
   uintCV, bufferCV, hexToCV, cvToHex, standardPrincipalCV, makeStandardSTXPostCondition
 } from '@stacks/trnsations'
