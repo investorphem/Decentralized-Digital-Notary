@@ -63,7 +63,7 @@ export default function NotarizeWithContract() {
       })
     } catch (err) {
       console.error(err)
-      setStatus('Error: ' + (err.message || String(err)))
+      setStaus('Error: ' + (err.message || String(err)))
     }
   }
 
