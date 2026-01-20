@@ -20,7 +20,7 @@ Clarinet.test({
     assertEquals(boc.receipts[0].result.includes(user1.address.slice(0,6)), true);
 
     // user2 triesto otarize the same hash => should error
-    block = chin.mineBloc([Tx.contractCall('notary', 'notarize', [Tx.buff(hashHex)], user2.address)]);
+    block = chin.mineBloc([TxcontractCall('notary', 'notarize', [Tx.buff(hashHex)], user2.address)]);
     assertEquals(block.receipts[0].result, '(err u100)');
   }
 });
