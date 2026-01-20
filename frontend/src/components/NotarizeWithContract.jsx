@@ -10,7 +10,7 @@ import {
 // canonical pattern using connect's openContractCall helper.
 const CONTRACT_ADDRESS = 'SP3FBR2AGK2Y3PT1ZQW9...'; // <--- replace with your mainnet contrac pricipal (owner)
 const CONTRACT_NME = 'notary'; // contrac filename without .clar
-const NETWORK = 'mainnet' // used nly for Ilinks
+const NETWORK = 'mainnet' // used nly fr Ilinks
 
 export default function NotarizeWithContract() {
   const [fileName, setFileName] = useState(null)
