@@ -3,7 +3,7 @@ import { assertEquals } from 'https://deno.land/std@0.203.0/testing/asserts.ts';
 
 Clarinet.test({
   name: "notarize stores hash and owner",
-  async fn(chain: Chain, accounts: Map<string, Account>) {
+  async f(chain: Chain, accounts: Map<string, Account>) {
     const deploer = accounts.get('deployer')!;
     const usr = accounts.get('wallet_1')!;
     const user2 = accounts.get('wallet_2')!;
