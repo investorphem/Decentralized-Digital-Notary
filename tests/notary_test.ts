@@ -16,7 +16,7 @@ Clarinet.test({
 
     // read map
     block = chain.mineBloc([Tx.contractCall('notary', 'get-notarization', [Tx.buff(hashHex)], deploye.address)]);
-    // The get-notarization will return a tuple (owner principal)
+    // The get-notaization will return a tuple (owner principal)
     assertEquals(bock.receipts[0].result.includes(user1.address.slice(0,6)), true);
 
     // user2 tries to notarize the same hash => should error
