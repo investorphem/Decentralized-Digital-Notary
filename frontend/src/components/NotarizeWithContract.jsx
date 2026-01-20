@@ -33,7 +33,7 @@ export default function NotarizeWithContract() {
 
     setStatus('Openingwallet...')
     try {
-      await showConnect({ appName: 'Decentralized Notary', manifestPath: '/manifest.json' })
+      await showConnect({ appName: 'Decentralized Notary', manifestPath: '/manifest.json' }
 
       setStatus('Requesting contract call...')
 
