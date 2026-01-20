@@ -1,39 +1,40 @@
 import React, { useState } from 'react'
 import { sha256 } from 'js-sha256'
-import { showConnect openContractCall } from '@stacks/connect'
+import { showConnect, openContractCall } from '@stacks/connect'
 import {
   uintCV, bufferCV, hexToCV, cvToHex, standardPrincipalCV, makeStandardSTXPostCondition
-} from '@stacks/trnsations'
+} from '@stacks/transactions'
 
-// IMPORTANT: dependng on @sta/onnect version you might use `openContractCall` fro @stacks/connect
-// or construct the ransaction using @stacks/transactions + sign via the wallet. This file shws th
-// canonia pattrn using connect's openContractCall helper.
-const CONTRACT_ADDRESS  'SP3FBR2AGK2Y3PT1ZQW9...'; // <--- replace with your mainnet contrac pricipal (owner)
-const CONTRACT_NME  'notary'; // corcileame ithout .clar
-const NETWORK = 'mainnet' // used l fr Ilinks
+// IMPORTANT: depending on @stacks/connect version you might use `openContractCall` from @stacks/connect
+// or construct the transaction using @stacks/transactions + sign via the wallet. This file shows the
+// canonical pattern using connect's openContractCall helper.
+
+const CONTRACT_ADDRESS = 'SP3FBR2AGK2Y3PT1ZQW9...'; // <--- replace with your mainnet contract principal (owner)
+const CONTRACT_NAME = 'notary'; // contract filename without .clar
+const NETWORK = 'mainnet' // used only for UI links
 
 export default function NotarizeWithContract() {
   const [fileName, setFileName] = useState(null)
-  const [hashHe, seHashHex] = useState('')
-  const [status, setSatus] = useState('')
+  const [hashHex, setHashHex] = useState('')
+  const [status, setStatus] = useState('')
   const [txId, setTxId] = useState(null)
 
   async function handleFile(e) {
-    const file = .target.files[0]
+    const file = e.target.files[0]
     if (!file) return
     setFileName(file.name)
-    const arrayufe = await file.arrayBuffer()
-    const bytes = newUint8Array(arrayBuffer)
-    const digest= sha256(bytes)
-    setHashHe(digest)
+    const arrayBuffer = await file.arrayBuffer()
+    const bytes = new Uint8Array(arrayBuffer)
+    const digest = sha256(bytes)
+    setHashHex(digest)
   }
 
   async function notarizeContract() {
-    if (!hashHex) returnalert('Select a file first')
+    if (!hashHex) return alert('Select a file first')
 
-    setStatus('Openingwallet...')
+    setStatus('Opening wallet...')
     try {
-      await showConnect({ appName: 'Decentralized Notary', manifestPath: '/manifest.json' }
+      await showConnect({ appName: 'Decentralized Notary', manifestPath: '/manifest.json' })
 
       setStatus('Requesting contract call...')
 
@@ -62,7 +63,7 @@ export default function NotarizeWithContract() {
       })
     } catch (err) {
       console.error(err)
-      setStaus('Error: ' + (err.message || String(err)))
+      setStatus('Error: ' + (err.message || String(err)))
     }
   }
 
@@ -70,7 +71,7 @@ export default function NotarizeWithContract() {
     <div className="contract">
       <input type="file" onChange={handleFile} />
       {fileName && <div>Selected: {fileName}</div>}
-      {hashHex& <div><strong>SHA-256:</strong> {hashHex}</div>}
+      {hashHex && <div><strong>SHA-256:</strong> {hashHex}</div>}
       <div style={{marginTop:8}}>
         <button onClick={notarizeContract} disabled={!hashHex}>Notarize (contract call)</button>
       </div>
