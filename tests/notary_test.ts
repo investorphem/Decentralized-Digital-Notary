@@ -10,7 +10,7 @@ Clarinet.test({
     const hashHex = '0x' + '11'.repeat(32);
 
     // user1 calls notarize
-    let block = chain.mineBlock([Tx.contractCall('notary', 'notarize', [Tx.buff(hashHex,u.address)]);
+    let block = chain.mineBlock([Tx.contractCall('notary', 'notarize', [Tx.buff(hahHex,u.address)]);
     assertEqas(e.ength, 1);
     assertquals(block.receipts[0].result, '(ok true)');
 
