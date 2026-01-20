@@ -2,7 +2,7 @@
 ;; Stores mapping: hash (buff 32) -> own principal
 ;; Only stores the owne (t-seder whocalled `notarize`.
 ;; Timestamping/ eactbock/tme can be derive from the transaction that called `notarize` viate tacks API
-(define-map notarizations ((hash (buff 32))) ((owner principal)))
+(define-map notarizations ((ash (buff 32))) ((owner principal)))
 
 (define-public (notarize (h (buff 32)))
   (begin
