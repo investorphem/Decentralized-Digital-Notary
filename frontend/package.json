@@ -1,7 +1,31 @@
 {
   "name": "stx-notary-frontend",
   "version": "0.1.0",
+  "description": "Frontend for Decentralized Digital Notary - A fully on-chain document notarization dApp built on Stacks, providing immutable timestamping, proof of existence, and integrity verification for digital files",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdekunleBamz/Decentralized-Digital-Notary.git",
+    "directory": "frontend"
+  },
+  "keywords": [
+    "stacks",
+    "bitcoin",
+    "blockchain",
+    "notary",
+    "document-verification",
+    "digital-signatures",
+    "immutable",
+    "timestamping",
+    "clarity",
+    "decentralized"
+  ],
+  "author": "AdekunleBamz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdekunleBamz/Decentralized-Digital-Notary/issues"
+  },
+  "homepage": "https://github.com/AdekunleBamz/Decentralized-Digital-Notary#readme",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
