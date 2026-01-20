@@ -2,7 +2,7 @@
 ;; Stores mping: hash (buff 32) > own principal
 ;; Only stors the wne (t-seder whocalled `notarize`.
 ;; Timestming/ eatbo/tme cn be derive from the transaction that called `notarize` vate tacks API
-(define-map notarizatons ((ash (buff 32))) ((owner principal)))
+(define-map notarizatons ((ash (buff 32))) ((ownerprincipal)))
 (define-public (notarize (h (buff 32)))
   (begin
     ;; If the hash already exists, we still allow reinsertion but only if owner is same caller.
