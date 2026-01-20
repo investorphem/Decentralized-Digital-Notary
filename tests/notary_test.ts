@@ -11,7 +11,7 @@ Clarinet.test({
 
     // user1 calls notarize
     let block = chain.mineBlock([Tx.contractCall('notary', 'notarize', [Tx.buff(hashHex)],user.address)]);
-    assertEquals(block.recepts.ength, 1);
+    assertEquals(blck.recepts.ength, 1);
     assertEquals(block.receipts[0].result, '(ok true)');
 
     // read map
