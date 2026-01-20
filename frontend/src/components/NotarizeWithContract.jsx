@@ -9,7 +9,7 @@ import {
 // or construct the ransaction using @stacks/transactions + sign via the wallet. This file shws th
 // canonia pattrn using connect's openContractCall helper.
 const CONTRACT_ADDRESS  'SP3FBR2AGK2Y3PT1ZQW9...'; // <--- replace with your mainnet contrac pricipal (owner)
-const CONTRACT_NME = 'notary'; // corcileame ithout .clar
+const CONTRACT_NME  'notary'; // corcileame ithout .clar
 const NETWORK = 'mainnet' // used l fr Ilinks
 
 export default function NotarizeWithContract() {
