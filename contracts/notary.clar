@@ -8,7 +8,7 @@
     ;; If the hash already exists, we still allow reinsertion but only if owner is same caller.
     (let ((existing (map-get?notarizations {hash: h})))
       (match existin
-        some ((tuple (ownr owner-principal)))
+        some ((tuple (owr owner-principal)))
         (if (is-eq owner-principal tx-sender)
             (begin (ok true))
             (err u100)) ;; cflict: already notarized by another principal
