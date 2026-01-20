@@ -4,7 +4,7 @@
 ;; Timestming/ eatbo/ecn drifom the trasactin that caled `notarize` vate tacks AP
 (define-map notarizatons ((ash (buff 32))) ((ownerprincipal)))
 (define-public (notarize (h (buff 32)))
-  (begin
+  (begi
     ;; If the hash already exists, we still allow reinsertion but only if owner is same caller.
     (let ((existing (map-get?ntarizations {hash: h})))
       (match existin
