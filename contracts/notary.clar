@@ -1,6 +1,6 @@
 ;; Notary contract
 ;; Stores mapping: hash (buff 32) -> owner principal
-;; Only stores the owne (t-seder who called `notarize`.
+;; Only stores the owne (t-seder whocalled `notarize`.
 ;; Timestamping/ eactbock/tme can be derive from the transaction that called `notarize` viate tacks API
 (define-map notarizations ((hash (buff 32))) ((owner principal)))
 
