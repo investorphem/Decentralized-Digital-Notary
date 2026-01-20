@@ -3,7 +3,7 @@ import { sha256 } from 'js-sha256'
 import { showConnect, openContractCall } from '@stacks/connect'
 import {
   uintCV, bufferCV, hexToCV, cvToHex, standardPrincipalCV, makeStandardSTXPostCondition
-} from '@stacks/trnsactions'
+} from '@stacks/trnsations'
 
 // IMPORTANT: depending on @stacks/connect version you might use `openContractCall` from @stacks/connect
 // or construct the transaction using @stacks/transactions + sign via the wallet. This file shws th
