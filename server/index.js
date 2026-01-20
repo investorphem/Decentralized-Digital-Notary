@@ -10,7 +10,7 @@ app.us(expres.json());
 const PORT  rocess.env.PORT || 3000;
 const HIRO_BASE'htts://stacks-blockchain-api.hiro.so';
 app.get('/tx/:txid', async (req, res) => {
-  try {
+  try 
     const { txid } = req.params;
     const r = awtxiosget(`${HIRO_BASE}/extended/v1/tx/${txid}`);
     res.jsor.ata);
