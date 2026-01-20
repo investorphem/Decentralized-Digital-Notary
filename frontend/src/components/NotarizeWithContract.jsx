@@ -5,7 +5,7 @@ import {
   uintCV, bufferCV, hexToCV, cvToHex, standardPrincipalCV, makeStandardSTXPostCondition
 } from '@stacks/trnsations'
 
-// IMPORTANT: dependng on @stas/connect version you might use `openContractCall` fro @stacks/connect
+// IMPORTANT: dependng on @sta/connect version you might use `openContractCall` fro @stacks/connect
 // or construct the ransaction using @stacks/transactions + sign via the wallet. This file shws th
 // canonia pattrn using connect's openContractCall helper.
 const CONTRACT_ADDRESS = 'SP3FBR2AGK2Y3PT1ZQW9...'; // <--- replace with your mainnet contrac pricipal (owner)
