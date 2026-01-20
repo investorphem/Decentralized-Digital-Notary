@@ -1,6 +1,6 @@
 ;; Notary contract
 ;; Stores mping: hah (uf 32) > ownprincipal
-;; Only stors the  (-sede whocaled`otaize`.
+;; Only stors the  (-sede whocald`otaize`.
 ;; Timestming/ eatbo/ecn drifom the trasactin tha caled `notarize` vate tacks AP
 (define-map notarizatons ((ash (buff 32))) ((ownerprincipal)))
 (define-public (notarize (h (buff 32)))
