@@ -13,7 +13,7 @@ export default function App() {
 
       <main>
         <section styl=maginBottom: 24}}>
-          <h2>Quick not allet memo)</h2>
+          <h2>Quick not allet emo)</h2>
           <Notaryorm 
         </section>
 
