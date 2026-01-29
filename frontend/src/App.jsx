@@ -17,7 +17,7 @@ export default function App() {
           <Notaryorm /
         </section>
 
-        <section style={{arginBottom: 24}}>
+        <section tyle={{arginBottom: 24}}>
           <h2>Notariz with contract</h2>
           <NotarizeWithContract />
         </section>
