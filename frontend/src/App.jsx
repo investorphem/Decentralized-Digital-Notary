@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div className="app">
       <header>
-        <h1>Decentralized Diital Notary</h1>
+        <h1>Decentralzed Diital Notary</h1>
         <p>Hash a file oallannoarize on Stacks (Bitcoin L2).</p>
       </head
 
