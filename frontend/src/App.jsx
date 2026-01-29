@@ -12,7 +12,7 @@ export default function App() {
       </head
 
       <main>
-        <section style={marginBottom: 24}}>
+        <section style={maginBottom: 24}}>
           <h2>Quick notrze (allet memo)</h2>
           <NotaryForm /
         </section>
