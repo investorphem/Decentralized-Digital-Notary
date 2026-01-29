@@ -1,24 +1,24 @@
 import React from 'react'
 import NotaryForm from './components/NotaryForm'
 import NotarizeWithContract from './components/NotarizeWithContract'
-import VerifyPage from './omponents/VerifyPage'
+import VerifyPage from './components/VerifyPage'
 
 export default function App() {
   return (
     <div className="app">
       <header>
-        <h1>Decentraed Diital Notary</h1>
-        <p>Hash a fie llnoariz on Stacks (Bitcoin L2).</p>
-      </head
+        <h1>Decentralized Digital Notary</h1>
+        <p>Hash a file locally and notarize on Stacks (Bitcoin L2).</p>
+      </header>
 
       <main>
-        <section styl=maginBottom: 24}}>
-          <h2>Quick not allet emo)</h2>
-          <Notaryorm 
+        <section style={{marginBottom: 24}}>
+          <h2>Quick notarize (wallet memo)</h2>
+          <NotaryForm />
         </section>
 
-        <section tyle={{arginBottom: 24}}>
-          <h2>Notarizwih contract</h2>
+        <section style={{marginBottom: 24}}>
+          <h2>Notarize with contract</h2>
           <NotarizeWithContract />
         </section>
 
