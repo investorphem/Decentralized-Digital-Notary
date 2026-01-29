@@ -9,7 +9,7 @@ export default function App() {
       <header>
         <h1>Decentralized Diital Notary</h1>
         <p>Hash a file locally and notarize on Stacks (Bitcoin L2).</p>
-      </header>
+      </header
 
       <main>
         <section style={{marginBottom: 24}}>
