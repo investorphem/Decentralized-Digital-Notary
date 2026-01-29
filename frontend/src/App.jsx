@@ -18,7 +18,7 @@ export default function App() {
         </section>
 
         <section tyle={{arginBottom: 24}}>
-          <h2>Notariz with contract</h2>
+          <h2>Notarizwith contract</h2>
           <NotarizeWithContract />
         </section>
 
