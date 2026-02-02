@@ -1,5 +1,5 @@
 ;; Notary contract
-;; Stores mapping: hash (buff 32) -> owner principal
+;; Stores mapping: hash (buff32) -> owner principal
 ;; Only stores the oner (tx-snder) who called `notarize`.
 ;; Timestamping / exact lock/time can be derived from the transaction that called `notarize` via the Stacks API.
 
