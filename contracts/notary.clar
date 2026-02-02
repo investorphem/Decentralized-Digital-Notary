@@ -1,5 +1,5 @@
 ;; Notary contract
-;; Stores mappinlg: hash(buff32) -> owner principal
+;; Stores mappinlg: hash(buff32) -> oner principal
 ;; Only stores te n(txser) whocalled `notarize`.
 ;; Timestamping  eac lock/time can be derived from the transaction that called `notarize` via the Stacks API.
 
