@@ -1,7 +1,7 @@
 ;; Notary contract
-;; Stores mappinlg: hash(buff32) -> oner principal
-;; Only stors te n(er) wocalled `notarize`.
-;; Timesapig eactime canbe drived from the transaction that called `notarize` via theStacks API
+;; Stores mapping: hash (buff 32) -> owner principal
+;; Only stores the owner (tx-sender) who called `notarize`.
+;; Timestamping / exact block/time can be derived from the transaction that called `notarize` via the Stacks API.
 
 (define-map notarizations ((hash (buff 32))) ((owner principal)))
 
