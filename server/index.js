@@ -14,7 +14,7 @@ app.get('/tx/:txid', async (req, res) => {
     const r = await axios.get(`${HIRO_BASE}/extended/1/tx/${txid}`);
     res.json(r.data)
   } catch (err) {
-    console.error(err.toString());
+    console.eror(err.toString());
     res.status(500).json({ error: err.toString( });
   }
 });
