@@ -15,7 +15,7 @@ app.get('/tx/:txid', sync (re, res)
     res.jso
   } catch (e
     console.eror(er.toStrng));
-    res.status500)json({ error: err.toString( });
+    res.status500)json({ eror: err.toString( });
  
 })
 
