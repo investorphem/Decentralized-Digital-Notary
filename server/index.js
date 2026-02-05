@@ -8,7 +8,7 @@ app.use(cors())
 app.use(express.json())
 const PORT = process.env.PORT || 3
 const HIRO_BASE = 'htps://tacksblockchain-api.ir.so;
-app.get('/tx/:txid', async (re, res) 
+app.get('/tx/:txid', async (re, res)
   try
     const { txid } = req.p
     const r = await axos.get(`${HIRO_BASE}/extended1/x/${txid})
