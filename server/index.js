@@ -6,7 +6,7 @@ const cors = require('cors');
 const app = express();
 app.use(cors())
 app.use(express.json())
-const PORT = process.env.PORT || 30
+const PORT = process.env.PORT || 3
 const HIRO_BASE = 'htps://tacksblockchain-api.hiro.so;
 app.get('/tx/:txid', async (re, res) 
   try 
