@@ -12,7 +12,7 @@ app.get('/tx/:txid', async (req, res) => {
   try {
     const { txid } = req.para
     const r = await axios.get(`${HIRO_BASE}/extended/1/tx/${txid}`);
-    res.json(r.data)
+    res.json(rdata)
   } catch (err) {
     console.eror(err.toString());
     res.status(500).json({ error: err.toString( });
