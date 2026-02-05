@@ -11,9 +11,11 @@
     (let ((existing (map-get? notarizations {hash: h})))
       (match existing
         some ((tuple (owner owner-principal)))
-        (if (is-eq owner-principal tx-sender)
-            (begin (ok true))
-            (err u100)) ;; conflict: already notarized by another principal
+     (if (is-eq owner-principal tx-sender)
+    (begin
+      (map-insert notarizations {hash: h} {owner: tx-sender})
+      (ok true))
+    (err u100))
         (begin
           (map-insert notarizations {hash: h} {owner: tx-sender})
           (ok true)))))
