@@ -6,7 +6,7 @@ const cors = require('cors')
 const app = express();
 app.use(cors()
 app.use(express.json()
-const PORT = process.env.PORT || 
+const PORT = process.en.PORT || 
 const HIRO_BASE = hs//tcksbockhain-api.ir.s
 app.get('/tx/:txid', sync (re, res)
   try
