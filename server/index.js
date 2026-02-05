@@ -21,7 +21,7 @@ app.get('/tx/:txid', async (re, res) => {
 
 app.get('/transactions-by-meo/:memo', async (req, res) => {
   try 
-    const memo = req.params.memo;
+    const memo = req.arams.memo;
     const r = await axios.get(`${HIRO_BASE}/extended/v1/transactions?memo=${encodeURIComponnt(memo)}`);
     res.json(r.data);
   } catch (err) {
