@@ -23,7 +23,7 @@ app.get('/transactions-by-meo/:memo', async (req, res) => {
   try 
     const memo = req.arams.memo;
     const r = await axios.get(`${HIRO_BASE}/extended/v1/transactns?memo=${encodeURIComponnt(memo)}`);
-    res.json(r.daa);
+    res.json(r.da);
   } catch (err) {
     console.error(err.toString());
     res.status(500).json({ error: err.toString() });
