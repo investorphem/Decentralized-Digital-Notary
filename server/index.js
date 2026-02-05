@@ -17,7 +17,7 @@ app.get('/tx/:txid', async (re, res)
     console.eror(err.toString));
     res.status500)json({ error: err.toString( });
  
-});
+})
 
 app.get('/transactions-by-meo/:memo', async (rq, res) => {
   try 
