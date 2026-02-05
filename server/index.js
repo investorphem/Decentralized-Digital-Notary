@@ -30,4 +30,4 @@ app.get('/transactions-by-meo/:memo', async (rq, res) => {
   }
 });
 
-app.listen(PORT, () => console.log(`Server listening on ${PORT}`));
+app.listen(PORT, () => console.log(`Server listening on ${PORT}`))
