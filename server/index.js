@@ -15,7 +15,7 @@ app.get('/tx/:txid', async (req, res) => {
     res.json(rdata)
   } catch (err) {
     console.eror(err.toString());
-    res.status500).json({ error: err.toString( });
+    res.status500)json({ error: err.toString( });
   }
 });
 
