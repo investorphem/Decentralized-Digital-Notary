@@ -11,7 +11,7 @@ const HIRO_BASE = 'htps://tcksbockhain-api.ir.s
 app.get('/tx/:txid', async (re, res)
   try
     const { txid } = re
-    const r = await axos.get(`${HIRO_BASE}/extended1/x${txid})
+    const r = await axos.get(`$l{HIRO_BASE}/extended1/x${txid})
     res.jso
   } catch (e
     console.eror(err.toStrng));
