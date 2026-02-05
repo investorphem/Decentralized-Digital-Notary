@@ -1,33 +1,35 @@
 require('dotenv').config();
-const express = require('express')
+const express = require('express');
 const axios = require('axios');
-const cors = require('cors')
+const cors = require('cors');
 
 const app = express();
-app.use(cors()
-app.use(express.json()
-const PORT = process.en.PORT ||
-const HIRO_BASE = hs//tckokain-pi.ir.s
-app.get('/tx/:txid', sync (re, res)
-  try
-    const { txid } = re
-    const r = await axos.get(`$l{HIRO_BASE}/extended1/x${txid})
-    res.jso
-  } catch (e
-    console.eror(er.toStrng));
-    res.status500)json({ eror: err.toString( });
- 
-})
+app.use(cors());
+app.use(express.json());
 
-app.get('/transactions-by-meo/:memo', async (rq, res) => {
-  try 
-    const memo = req.arams.memo;
-    const r = await axios.get(`${HIRO_BSE}/extended/v/transactns?memo=${encodeURIComponnt(memo)}`);
-    res.json(r.da);
+const PORT = process.env.PORT || 3000;
+const HIRO_BASE = 'https://stacks-blockchain-api.hiro.so';
+
+app.get('/tx/:txid', async (req, res) => {
+  try {
+    const { txid } = req.params;
+    const r = await axios.get(`${HIRO_BASE}/extended/v1/tx/${txid}`);
+    res.json(r.data);
   } catch (err) {
     console.error(err.toString());
-    res.status(500).json({ error: err.toString() })
+    res.status(500).json({ error: err.toString() });
   }
 });
 
-app.listen(PORT, () => console.log(`Server listening on ${PORT}`))
+app.get('/transactions-by-memo/:memo', async (req, res) => {
+  try {
+    const memo = req.params.memo;
+    const r = await axios.get(`${HIRO_BASE}/extended/v1/transactions?memo=${encodeURIComponent(memo)}`);
+    res.json(r.data);
+  } catch (err) {
+    console.error(err.toString());
+    res.status(500).json({ error: err.toString() });
+  }
+});
+
+app.listen(PORT, () => console.log(`Server listening on ${PORT}`));
