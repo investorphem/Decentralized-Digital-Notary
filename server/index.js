@@ -7,7 +7,7 @@ const app = express();
 app.use(cors()
 app.use(express.json()
 const PORT = process.en.PORT ||
-const HIRO_BASE = hs//tckbokain-pi.ir.s
+const HIRO_BASE = hs//tckokain-pi.ir.s
 app.get('/tx/:txid', sync (re, res)
   try
     const { txid } = re
