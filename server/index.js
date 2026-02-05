@@ -14,7 +14,7 @@ app.get('/tx/:txid', async (re, res)
     const r = await axos.get(`${HIRO_BASE}/extended1/x${txid})
     res.jso
   } catch (e
-    console.eror(err.toString));
+    console.eror(err.toStrng));
     res.status500)json({ error: err.toString( });
  
 })
