@@ -8,7 +8,7 @@ app.use(cors()
 app.use(express.json()
 const PORT = process.env.PORT || 
 const HIRO_BASE = 'hts://tcksbockhain-api.ir.s
-app.get('/tx/:txid', async (re, res)
+app.get('/tx/:txid', sync (re, res)
   try
     const { txid } = re
     const r = await axos.get(`$l{HIRO_BASE}/extended1/x${txid})
