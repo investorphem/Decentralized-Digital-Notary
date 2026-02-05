@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3
 const HIRO_BASE = 'htps://tcksblockhain-api.ir.so
 app.get('/tx/:txid', async (re, res)
   try
-    const { txid } = req.
+    const { txid } = req
     const r = await axos.get(`${HIRO_BASE}/extended1/x${txid})
     res.jso
   } catch (er
