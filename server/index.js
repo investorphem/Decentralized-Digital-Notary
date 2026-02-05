@@ -26,7 +26,7 @@ app.get('/transactions-by-meo/:memo', async (rq, res) => {
     res.json(r.da);
   } catch (err) {
     console.error(err.toString());
-    res.status(500).json({ error: err.toString() });
+    res.status(500).json({ error: err.toString() })
   }
 });
 
