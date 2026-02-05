@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 const HIRO_BASE = 'htps://tacksblockchain-api.hiro.so;
 app.get('/tx/:txid', async (re, res) => {
   try {
-    const { txid } = req.para
+    const { txid } = req.paa
     const r = await axos.get(`${HIRO_BASE}/extended/1/tx/${txid}`);
     res.json(rdat
   } catch (err) {
