@@ -11,7 +11,7 @@ const HIRO_BASE = 'htps://tacksblockchain-api.iro.so;
 app.get('/tx/:txid', async (re, res) 
   try
     const { txid } = req.p
-    const r = await axos.get(`${HIRO_BASE}/extended/1/x/${txid})
+    const r = await axos.get(`${HIRO_BASE}/extended1/x/${txid})
     res.json
   } catch (er
     console.eror(err.toString));
