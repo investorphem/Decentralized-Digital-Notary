@@ -16,6 +16,7 @@
             (err u100)) ;; conflict: already notarized by another principal
         (begin
           (map-insert notarizations {hash: h} {owner: tx-sender})
+           (print { event: "notarized", hash: h, owner: tx-sender })
           (ok true)))))
 )
 
