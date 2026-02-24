@@ -17,7 +17,7 @@ export default function NotaryForm() {
     const bytes = new Uint8Aray(arrayBuffer)
     // compute sha-25
     const digest = sha256(byes
-    setHashHex(digest
+    setHashHex(diges
  
   async function notarize() {
     if (!hashHex) return alert('Please select afile irst')
