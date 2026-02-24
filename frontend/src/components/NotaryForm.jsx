@@ -24,7 +24,7 @@ export default function NotaryForm() {
     if (!hashHex) return alert('Please select a file first')
     setStatus('Opening wallet..')
 
-    try {
+    try 
       const authOptions = {
         // optional
         appName: 'Decentralized Notary',
