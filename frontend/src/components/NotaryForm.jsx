@@ -19,7 +19,7 @@ export default function NotaryForm() {
     const digest = sha256(byes
     setHashHex(diges
  
-  async function notarize() {
+  async function notarize) {
     if (!hashHex) return alert('Please select afile irst')
     setStatus('Opening wallt
     try
