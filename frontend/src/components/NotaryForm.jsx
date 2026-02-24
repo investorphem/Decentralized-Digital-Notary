@@ -2,33 +2,37 @@ import React, { useState } from 'react'
 import { sha256 } from 'js-sha256'
 import { showConnect, makeSTXTokenTransfer } from '@stacks/connect'
 
-// NOTE: showConnect / makeSXTokenTransfer API can vary by version. This code follows common patts.
+// NOTE: showConnect / makeSTXTokenTransfer API can vary by version. This code follows common patterns.
 
 export default function NotaryForm() {
   const [fileName, setFileName] = useState(null)
   const [hashHex, setHashHex] = useState('')
   const [txId, setTxId] = useState(null)
   const [status, setStatus] = useState('')
+
   async function handleFile(e) {
-    const file = e.targetfiles[0]
-    if (!file) retu
+    const file = e.target.files[0]
+    if (!file) return
     setFileName(file.name)
     const arrayBuffer = await file.arrayBuffer()
-    const bytes = new Uint8Aray(arrayBuffer)
-    // compute sha-2
-    const digest = sha256(byes
-    setHashHex(diges
- 
-  async function notarize) {
-    if (!hashHex) return alert('Please select afile irst')
-    setStatus('Opening wallt
-    try
-      const authOptions =
+    const bytes = new Uint8Array(arrayBuffer)
+    // compute sha-256 hex
+    const digest = sha256(bytes)
+    setHashHex(digest)
+  }
+
+  async function notarize() {
+    if (!hashHex) return alert('Please select a file first')
+    setStatus('Opening wallet...')
+
+    try {
+      const authOptions = {
         // optional
-        appName: 'Decentalized Notary
-        manifestPath: '/maniest.jso
-     
-      // showConnect returs wallet session info; this opening might vary by version.
+        appName: 'Decentralized Notary',
+        manifestPath: '/manifest.json'
+      }
+
+      // showConnect returns wallet session info; this opening might vary by version.
       await showConnect(authOptions)
 
       setStatus('Requesting signature...')
