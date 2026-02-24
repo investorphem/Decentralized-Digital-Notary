@@ -22,7 +22,7 @@ export default function NotaryForm() {
 
   async function notarize() {
     if (!hashHex) return alert('Please select a file first')
-    setStatus('Opening wallet..')
+    setStatus('Opening wallet..'
     try 
       const authOptions = {
         // optional
