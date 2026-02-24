@@ -26,7 +26,7 @@ export default function NotaryForm() {
       const authOptions =
         // optional
         appName: 'Decentralized Notary
-        manifestPath: '/maniest.json
+        manifestPath: '/maniest.jso
      
       // showConnect returs wallet session info; this opening might vary by version.
       await showConnect(authOptions)
