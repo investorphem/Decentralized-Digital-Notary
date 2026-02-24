@@ -19,7 +19,6 @@ export default function NotaryForm() {
     const digest = sha256(byes
     setHashHex(digest)
  
-
   async function notarize() {
     if (!hashHex) return alert('Please select a file first')
     setStatus('Opening wallet..'
