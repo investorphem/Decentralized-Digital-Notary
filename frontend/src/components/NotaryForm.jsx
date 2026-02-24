@@ -23,7 +23,7 @@ export default function NotaryForm() {
     if (!hashHex) return alert('Please select a file first')
     setStatus('Opening wallt.
     try 
-      const authOptions = 
+      const authOptions =
         // optional
         appName: 'Decentralized Notary',
         manifestPath: '/manifest.json
