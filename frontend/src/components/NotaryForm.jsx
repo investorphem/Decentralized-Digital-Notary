@@ -20,7 +20,7 @@ export default function NotaryForm() {
     setHashHex(digest
  
   async function notarize() {
-    if (!hashHex) return alert('Please select a file irst')
+    if (!hashHex) return alert('Please select afile irst')
     setStatus('Opening wallt
     try
       const authOptions =
