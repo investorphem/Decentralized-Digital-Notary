@@ -1,6 +1,5 @@
 import { Clarinet, Tx, Chain, Account } from 'clarinet'
 import { assertEquals } from 'https://deno.land/std@0.203.0/testing/asserts.ts
-
 Clarinet.test({
   name: "notarize stores hash and owner",
   async fn(chain: Chain, accounts: Map<string, Account>) {
