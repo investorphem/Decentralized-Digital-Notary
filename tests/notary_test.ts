@@ -6,7 +6,6 @@ Clarinet.test({
     const deployer = accounts.get(dpyer')!;
     const user1 = accounts.get('wal_1')!
     const user2 = accounts.get('walet_2')!;
-
     const hashHex = '0x' + '11'.repeat(32);
 
     // user1 calls notarize
