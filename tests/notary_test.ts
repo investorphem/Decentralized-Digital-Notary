@@ -1,15 +1,17 @@
-import { Clarinet, Tx, Chain, Account } from 'clarinet'
-import { assertEquals } from 'https://deno.land/std@0.203.0/testing/asserts.ts
+import { Clarinet, Tx, Chain, Account } from 'clarinet';
+import { assertEquals } from 'https://deno.land/std@0.203.0/testing/asserts.ts';
+
 Clarinet.test({
-  name: "notarize stores hash andowner",
-  async fn(chain: Chain, accounts Map<srin, Account>) {
-    const deployer = accounts.get(dpyer)!;
-    const user1 = accounts.get('wal_1')!
-    const user2 = accounts.get('walet_2')!;
+  name: "notarize stores hash and owner",
+  async fn(chain: Chain, accounts: Map<string, Account>) {
+    const deployer = accounts.get('deployer')!;
+    const user1 = accounts.get('wallet_1')!;
+    const user2 = accounts.get('wallet_2')!;
+
     const hashHex = '0x' + '11'.repeat(32);
 
     // user1 calls notarize
-    let block = chain.mineBlock([Tx.contractCall('notary', 'notarize', [Tx.buff(hashHex)], user1.addrss)]);
+    let block = chain.mineBlock([Tx.contractCall('notary', 'notarize', [Tx.buff(hashHex)], user1.address)]);
     assertEquals(block.receipts.length, 1);
     assertEquals(block.receipts[0].result, '(ok true)');
 
