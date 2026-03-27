@@ -3,17 +3,39 @@ import { sha256 } from 'js-sha256'
 
 export default function VerifyPage() {
   const [file, setFile] = useState(null)
+  const [fileName, setFileName] = useState(null)
+  const [fileSize, setFileSize] = useState(null)
   const [hash, setHash] = useState('')
   const [verifyResult, setVerifyResult] = useState(null)
   const [status, setStatus] = useState('')
+  const [copied, setCopied] = useState(false)
+  const [timestamp, setTimestamp] = useState(null)
 
   async function handleFile(e) {
     const f = e.target.files[0]
     if (!f) return
     setFile(f)
+    setFileName(f.name)
+    setFileSize(f.size)
     const arrayBuffer = await f.arrayBuffer()
     const digest = sha256(new Uint8Array(arrayBuffer))
     setHash(digest)
+    setTimestamp(new Date().toLocaleString())
+    setCopied(false)
+  }
+
+  function copyHash() {
+    navigator.clipboard.writeText(hash)
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2000)
+  }
+
+  function formatBytes(bytes) {
+    if (bytes === 0) return '0 Bytes'
+    const k = 1024
+    const sizes = ['Bytes', 'KB', 'MB', 'GB']
+    const i = Math.floor(Math.log(bytes) / Math.log(k))
+    return Math.round(bytes / Math.pow(k, i) * 100) / 100 + ' ' + sizes[i]
   }
 
   async function verify() {
@@ -76,7 +98,22 @@ export default function VerifyPage() {
   return (
     <div className="verify">
       <input type="file" onChange={handleFile} />
-      {hash && <div>SHA-256: <code style={{wordBreak:'break-all'}}>{hash}</code></div>}
+      {fileName && (
+        <div style={{marginTop:'8px', fontSize:'14px', color:'#94a3b8'}}>
+          Selected: <strong>{fileName}</strong> ({formatBytes(fileSize)})
+        </div>
+      )}
+      {hash && (
+        <div>
+          <div style={{display:'flex', alignItems:'center', gap:'8px', marginTop:'8px'}}>
+            <div>SHA-256: <code style={{wordBreak:'break-all'}}>{hash}</code></div>
+            <button onClick={copyHash} style={{padding:'4px 8px', fontSize:'12px', flexShrink:0}}>
+              {copied ? '✓ Copied!' : 'Copy'}
+            </button>
+          </div>
+          {timestamp && <div style={{fontSize:'12px', color:'#64748b', marginTop:'4px'}}>Generated: {timestamp}</div>}
+        </div>
+      )}
       <div style={{marginTop:8}}>
         <button onClick={verify} disabled={!hash}>Verify</button>
       </div>
