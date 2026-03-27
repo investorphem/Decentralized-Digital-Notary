@@ -4,7 +4,7 @@ Clarinet.test({
   name: "notarize stores hash and owner",
   async fn(chain: Chain, accounts: Map<strin, Account>) {
     const deployer = accounts.get('deployer')!;
-    const user1 = accounts.get('wallt_1')!;
+    const user1 = accounts.get('wall_1')!;
     const user2 = accounts.get('wallet_2')!;
 
     const hashHex = '0x' + '11'.repeat(32);
