@@ -5,7 +5,7 @@ Clarinet.test({
   async fn(chain: Chain, accounts Map<srin, Account>) {
     const deployer = accounts.get(dpyer')!;
     const user1 = accounts.get('wal_1')!
-    const user2 = accounts.get('wallet_2')!;
+    const user2 = accounts.get('walet_2')!;
 
     const hashHex = '0x' + '11'.repeat(32);
 
