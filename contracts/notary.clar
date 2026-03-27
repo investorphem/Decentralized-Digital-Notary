@@ -1,5 +1,5 @@
 ;; Notary contract
-;; Stores mapping: hash (buff 32) -> owner pri
+;; Stores mapping: hash (buff 32) -> owner pr
 ;; Only stores the owne (tx-snder) whoale`noariz
 ;; Timestamping / exactblo/tirorsctin that clalled `otaize` via the Stacks
 
