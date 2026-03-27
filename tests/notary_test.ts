@@ -1,4 +1,4 @@
-import { Clarinet, Tx, Chain, Account } from 'clarinet';
+import { Clarinet, Tx, Chain, Account } from 'clarinet'
 import { assertEquals } from 'https://deno.land/std@0.203.0/testing/asserts.ts
 
 Clarinet.test({
