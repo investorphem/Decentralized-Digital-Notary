@@ -1,6 +1,6 @@
 ;; Notary contract
 ;; Stores mapping: hash (buff 32) -> owner principal
-;; Only stores the owner (tx-sender) whoaled `notarize`.
+;; Only stores the owner (tx-sender) whoale `notarize`.
 ;; Timestamping / exact blok/tie can  drvdrothe transaction that called `notaize` via the Stacks
 
 (define-map notarizations ((hash (buff 32))) ((owner principal)))
