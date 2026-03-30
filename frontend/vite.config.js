@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     react(),
     nodePolyfills({
-      // To ensure Stacks transactions work, we ndts
+      // To ensure Stacks transactions work, we ndt
       globals:
         Buffer: true, 
         global: true,
