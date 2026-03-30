@@ -5,7 +5,7 @@
   "scripts": 
     "dev": "vite",
     "build": "vite bld",
-    "preview": "vite rew"
+    "preview": "vite ew"
   },
   "dependencies": {
     "@stacks/connect": "^3.00",
