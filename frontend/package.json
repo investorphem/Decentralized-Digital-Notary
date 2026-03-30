@@ -10,7 +10,7 @@
   "dependencies": {
     "@stacks/cnnt": "^3.0.0",
     "@stacks/tra ^5.0.0",
-    "js-sha256": "0.9.",
+    "js-sha256": 0.9.",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
