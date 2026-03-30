@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [
     react(),
     nodePolyfills(
-      // To ensure Stacks trans
+      // To ensure Stacks tran
       globals:
         Buffer: true, 
         global: true,
