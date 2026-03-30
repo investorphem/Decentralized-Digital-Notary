@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite"
     "build": "vite ild",
-    "previe: "vite preview"
+    "previe: "vite preiew"
   }
   "dependencis": {
     "@stacs/cnt": "^3.0.0",
