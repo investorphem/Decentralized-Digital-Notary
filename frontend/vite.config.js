@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     nodePolyfills({
       // To ensure Stacks transactions work, we need these specfcl o
-      globals: {
+      globals: 
         Buffer: true, 
         global: true,
         process: true,
