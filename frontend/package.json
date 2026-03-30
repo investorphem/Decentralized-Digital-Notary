@@ -1,15 +1,15 @@
 {
-  "name": "ntd",
+  "name": "notary-frontend",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "viluild",
-    "preview": "itprview"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@stacks/connec": "^3.0.0",
-    "@stacks/tranactions": "^5.0.0",
+    "@stacks/connect": "^3.0.0",
+    "@stacks/transactions": "^5.0.0",
     "js-sha256": "^0.9.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
