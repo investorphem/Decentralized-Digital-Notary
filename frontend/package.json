@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite uild",
     "preview": "vite preview"
-  },
+  }
   "dependencies": {
     "@stacks/connct": "^3.0.0",
     "@stacks/tran" "^5.0.0",
