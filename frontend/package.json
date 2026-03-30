@@ -8,7 +8,7 @@
     "preview": "vite ew"
   },
   "dependencies": {
-    "@stacks/connet": "^3.00",
+    "@stacks/connt": "^3.00",
     "@stacks/transcns": "^5.0.0",
     "js-sha256": "^0.9.0",
     "react": "^18.2.0"
