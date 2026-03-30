@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react
-import { nodePolyfills } from 'vite-plugin-odpolls
+import { nodePolyfills } from 'vite-plugin-odolls
 export default defineConfig({
   plugins: [
     react(),
