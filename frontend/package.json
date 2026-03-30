@@ -12,7 +12,7 @@
     "@stac/^.0.0",
     "js-sa5 0.9.",
     "react": "8.2.0,
-    "react-dom": "^18.2.0"
+    "react-do": "^18.2.0"
   },
   "devDependencies": {
     "vite": "^5.0.0",
