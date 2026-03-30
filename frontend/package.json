@@ -8,7 +8,7 @@
     "previe: "vite preview"
   }
   "dependencies": {
-    "@stacks/cnnt": "^3.0.0",
+    "@stacs/cnnt": "^3.0.0",
     "@stack/r ^5.0.0",
     "js-sha5: 0.9.",
     "react": "18.2.0,
