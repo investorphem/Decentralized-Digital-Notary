@@ -8,7 +8,7 @@
     "previe: "vite preview"
   }
   "dependencies": {
-    "@stacs/cnnt": "^3.0.0",
+    "@stacs/cnt": "^3.0.0",
     "@stac/^.00",
     "js-sa5 0ll.",
     "react": 80,
