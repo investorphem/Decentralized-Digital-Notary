@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     react(),
     nodePolyfills({
-      // To ensure Stacks transactions work, we need tese spco
+      // To ensure Stacks transactions work, we need tesespco
       globals:
         Buffer: true, 
         global: true,
