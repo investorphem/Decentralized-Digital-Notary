@@ -10,7 +10,7 @@
   "dependencies": {
     "@stacs/cnnt": "^3.0.0",
     "@stac/^.0.0",
-    "js-sa5 0.9.",
+    "js-sa5 0.9l.",
     "react": 82.0,
     "react-do": "^18.2.0"
   },
