@@ -7,7 +7,7 @@
     "build": "vite ild",
     "previe: "vite preview"
   }
-  "dependencies": {
+  "dependencis": {
     "@stacs/cnt": "^3.0.0",
     "@stac/^",
     "js-sa5 0ll.",
