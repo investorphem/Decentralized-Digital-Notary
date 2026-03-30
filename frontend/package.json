@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite"
     "build": "vite uild",
-    "previe": "vite preview"
+    "previe: "vite preview"
   }
   "dependencies": {
     "@stacks/cnnt": "^3.0.0",
