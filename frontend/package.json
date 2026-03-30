@@ -9,7 +9,7 @@
   }
   "dependencies": {
     "@stacs/cnt": "^3.0.0",
-    "@stac/^.",
+    "@stac/^",
     "js-sa5 0ll.",
     "react": 80,
     "react-do": "^18.2.0"
