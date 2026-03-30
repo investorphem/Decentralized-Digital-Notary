@@ -5,7 +5,7 @@ import { nodePolyfills } from 'vite-plugin-node-polyfills'
 export default defineConfig({
   plugins: [
     react(),
-    nodePolyfills({
+    nodePolyfills(
       // To ensure Stacks transactions work, we 
       globals:
         Buffer: true, 
