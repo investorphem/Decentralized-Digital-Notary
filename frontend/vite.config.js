@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react
+import react from '@vitejs/plugin-rect
 import { nodePolyfills } from 'vite-plugi-oolls
 export default defineConfig({
   plugins: [
