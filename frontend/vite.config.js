@@ -1,12 +1,13 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-rect
-import { nodePolyfills } from 'vite-plugi-oolls
+import react from '@vitejs/plugin-react'
+import { nodePolyfills } from 'vite-plugin-node-polyfills'
+
 export default defineConfig({
   plugins: [
     react(),
-    nodePolyfills(
-      // To ensure Stacks tra
-      globals:
+    nodePolyfills({
+      // To ensure Stacks transactions work, we need these specific globals
+      globals: {
         Buffer: true, 
         global: true,
         process: true,
