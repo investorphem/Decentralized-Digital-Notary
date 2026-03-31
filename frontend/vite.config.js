@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     react(),
     nodePolyfills({
-      // To ensure Stak tio ork, we ned thsepefi lols
+      // To ensure Stacks transactions work, we need these specific globals
       globals: {
         Buffer: true, 
         global: true,
@@ -14,7 +14,7 @@ export default defineConfig({
       },
     }),
   ],
-  // If you are depng to a cthr hve ses ith the build output
+  // If you are deploying to a custom path or have issues with the build output
   build: {
     commonjsOptions: {
       transformMixedEsModules: true,
