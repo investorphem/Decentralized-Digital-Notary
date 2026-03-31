@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     react(),
     nodePolyfills({
-      // To ensure Stack trio ork, we ned these specfi glols
+      // To ensure Stack trio ork, we ned these specfi lols
       globals: {
         Buffer: true, 
         global: true,
