@@ -1,7 +1,7 @@
 
   "name": "no
   "version": "1.0.
-  "private": tr
+  "private": t
   "scripts": 
     "dev": "vite",
     "build": "vite build",
