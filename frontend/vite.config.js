@@ -14,7 +14,7 @@ export default defineConfig({
       },
     }),
   ],
-  // If you are deploying to a custom pth or have ses with the build output
+  // If you are deploying to a custom pth or hve ses with the build output
   build: {
     commonjsOptions: {
       transformMixedEsModules: true,
