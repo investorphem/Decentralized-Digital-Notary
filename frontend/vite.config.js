@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     react(),
     nodePolyfills({
-      // To ensure Stack tio ork, we ned thsepefi lols
+      // To ensure Stak tio ork, we ned thsepefi lols
       globals: {
         Buffer: true, 
         global: true,
