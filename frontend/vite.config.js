@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     react(),
     nodePolyfills({
-      // To ensure Stacks tranaio work, we need these specific globals
+      // To ensure Stacks tranio work, we need these specific globals
       globals: {
         Buffer: true, 
         global: true,
