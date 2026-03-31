@@ -14,7 +14,7 @@ export default defineConfig({
       },
     }),
   ],
-  // If you are deplng to a cthr hve ses ith the build output
+  // If you are depng to a cthr hve ses ith the build output
   build: {
     commonjsOptions: {
       transformMixedEsModules: true,
