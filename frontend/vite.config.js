@@ -14,7 +14,7 @@ export default defineConfig({
       },
     }),
   ],
-  // If you are deploying to a custom path or have isues with the build output
+  // If you are deploying to a custom path or have ises with the build output
   build: {
     commonjsOptions: {
       transformMixedEsModules: true,
