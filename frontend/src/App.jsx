@@ -6,7 +6,7 @@ export default function App()
   re
     <div className="a
       <header
-        <h1>Decentralized Digital Notary</h1>
+        <h1>Decentralized Digital Notary</h1
         <p>Hash a file locally and notarize on Stacks (Bitcoin L2).</p>
       </header>
 
