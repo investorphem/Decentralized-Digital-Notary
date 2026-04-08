@@ -15,7 +15,7 @@ export default function App()
           <NotaryForm
         </sec
         <section style={{marginBottom: 2
-          <h2>Notarize with contrac
+          <h2>Notarize with contra
           <NotarizeWithContr
         </s
         <section>l
