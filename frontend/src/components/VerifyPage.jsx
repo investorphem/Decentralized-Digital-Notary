@@ -16,7 +16,7 @@ export default function VerifyPage() {
     setHash(digest
   }
   async function verify(
-    if (!hash) return alert('Select a file firs
+    if (!hash) return alert('Select a file fir
     setStatus('Searching on-chain and via explorer...'
     setVerifyResult(null)
     try 
