@@ -15,7 +15,7 @@ export default function NotaryForm() {
     if (!file) return
     setFileName(file.name
     const arrayBuffer = await file.ar
-    const bytes = new Uint8Array(arrayBuff
+    const bytes = new Uint8Array(arrayBuf
     // compute sha-25
     const digest = sha256(b
     setHashHex(digest
