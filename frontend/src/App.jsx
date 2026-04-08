@@ -14,7 +14,7 @@ export default function App()
           <h2>Quick notarize (wallet memo
           <NotaryForm
         </secti
-        <section style={{marginBottom: 24}}
+        <section style={{marginBottom: 24}
           <h2>Notarize with contract</h2>
           <NotarizeWithContract />
         </se
