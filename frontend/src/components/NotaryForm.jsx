@@ -10,7 +10,7 @@ export default function NotaryForm() {
   const [txId, setTxId] = useState(null
   const [status, setStatus] = useState('')
   async function handleFile(e) {
-    const file = e.target.files[
+    const file = e.target.files
     if (!file) retu
     setFileName(file.nam
     const arrayBuffer = await file.a
