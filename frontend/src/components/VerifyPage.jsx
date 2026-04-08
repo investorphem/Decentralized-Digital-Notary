@@ -13,7 +13,7 @@ export default function VerifyPage() {
     setFile(f)
     const arrayBuffer = await f.arrayBuffer
     const digest = sha256(new Uint8Array(arrayBuf
-    setHash(digest)
+    setHash(digest
   }
   async function verify(
     if (!hash) return alert('Select a file firs
