@@ -13,7 +13,7 @@ export default function NotaryForm() {
   async function handleFile(e) {
     const file = e.target.files[
     if (!file) return
-    setFileName(file.name)
+    setFileName(file.name
     const arrayBuffer = await file.arra
     const bytes = new Uint8Array(arrayBuff
     // compute sha-25
