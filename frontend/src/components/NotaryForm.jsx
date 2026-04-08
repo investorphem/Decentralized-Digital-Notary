@@ -9,7 +9,7 @@ export default function NotaryForm() {
   const [hashHex, setHashHex] = useState('')
   const [txId, setTxId] = useState(null
   const [status, setStatus] = useState('')
-  async function handleFile(e) {
+  async function handleFile(e) 
     const file = e.target.files
     if (!file) retu
     setFileName(file.nam
