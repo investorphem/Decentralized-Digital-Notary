@@ -7,7 +7,7 @@ import { showConnect, makeSTXTokenTransfer } from '@stacks/connect'
 export default function NotaryForm() {
   const [fileName, setFileName] = useState(null
   const [hashHex, setHashHex] = useState('')
-  const [txId, setTxId] = useState(null)
+  const [txId, setTxId] = useState(null
   const [status, setStatus] = useState('')
 
   async function handleFile(e) {
