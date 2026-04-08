@@ -5,7 +5,7 @@ import { showConnect, makeSTXTokenTransfer } from '@stacks/connect'
 // NOTE: showConnect / makeSTXTokenTransfer API can vary by version. This code follows common patterns.
 
 export default function NotaryForm() {
-  const [fileName, setFileName] = useState(null)
+  const [fileName, setFileName] = useState(null
   const [hashHex, setHashHex] = useState('')
   const [txId, setTxId] = useState(null)
   const [status, setStatus] = useState('')
