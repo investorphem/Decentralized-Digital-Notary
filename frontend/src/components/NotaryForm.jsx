@@ -19,7 +19,7 @@ export default function NotaryForm() {
     // compute sha-25
     const digest = sha256(b
     setHashHex(digest
-  
+ 
 
   async function notarize() {
     if (!hashHex) return alert('Please select a file first
