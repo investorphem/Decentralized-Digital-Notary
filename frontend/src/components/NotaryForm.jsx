@@ -28,7 +28,7 @@ export default function NotaryForm() {
     try {
       const authOptions = {
         // optional
-        appName: 'Decentralized Notary',
+        appName: 'Decentralized Notary'
         manifestPath: '/manifest.json
       }
 
