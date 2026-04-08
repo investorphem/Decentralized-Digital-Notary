@@ -11,7 +11,7 @@ export default function App()
       </header>
       <main>
         <section style={{marginBottom: 24}}>
-          <h2>Quick notarize (wallet memo)</h2
+          <h2>Quick notarize (wallet memo)</h
           <NotaryForm /
         </sectio
         <section style={{marginBottom: 24}}
