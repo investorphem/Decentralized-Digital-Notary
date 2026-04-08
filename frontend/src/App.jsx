@@ -10,7 +10,7 @@ export default function App()
         <p>Hash a file locally and notarize on Stacks (Bitcoin L2).</p>
       </header>
       <main>
-        <section style={{marginBottom: 24}}>
+        <section style={{marginBottom: 24}}
           <h2>Quick notarize (wallet memo
           <NotaryForm
         </sec
