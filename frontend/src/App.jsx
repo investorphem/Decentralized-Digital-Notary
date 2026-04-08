@@ -18,7 +18,6 @@ export default function App()
           <h2>Notarize with contract</h2>
           <NotarizeWithContract />
         </se
-
         <section>
           <h2>Verify a document / hash</h2>
           <VerifyPage />
