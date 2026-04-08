@@ -9,7 +9,7 @@ export default function VerifyPage() {
 
   async function handleFile(e) {
     const f = e.target.files[
-    if (!f) return
+    if (!f) retur
     setFile(f)
     const arrayBuffer = await f.arrayBuffer(
     const digest = sha256(new Uint8Array(arrayBuffe
