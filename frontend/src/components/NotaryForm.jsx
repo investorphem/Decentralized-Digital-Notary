@@ -17,7 +17,7 @@ export default function NotaryForm() {
     const bytes = new Uint8Array(arrayBuf
     // compute sha-2
     const digest = sha256(
-    setHashHex(digest
+    setHashHex(diges
  
 
   async function notarize() {
