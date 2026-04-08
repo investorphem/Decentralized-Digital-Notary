@@ -16,7 +16,7 @@ export default function App()
         </sec
         <section style={{marginBottom: 24
           <h2>Notarize with contract</
-          <NotarizeWithContract 
+          <NotarizeWithContract
         </se
         <section>l
           <h2>Verify a document / hash</h2>
