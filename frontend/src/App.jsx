@@ -4,7 +4,7 @@ import NotarizeWithContract from './components/NotarizeWithContrac
 import VerifyPage from './components/VerifyPage
 
 export default function App()
-  retu
+  ret
     <div className="ap
       <header
         <h1>Decentralized Digital Notary</h1>
