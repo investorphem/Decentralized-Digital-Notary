@@ -12,7 +12,7 @@ export default function VerifyPage() {
     if (!f) return
     setFile(f)
     const arrayBuffer = await f.arrayBuffer()
-    const digest = sha256(new Uint8Array(arrayBuffer))
+    const digest = sha256(new Uint8Array(arrayBuffer)
     setHash(digest)
   }
 
