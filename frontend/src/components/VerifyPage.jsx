@@ -17,7 +17,7 @@ export default function VerifyPage() {
   }
 
   async function verify() 
-    if (!hash) return alert('Select a file first')
+    if (!hash) return alert('Select a file first'
     setStatus('Searching on-chain and via explorer...')
     setVerifyResult(null)
 
