@@ -15,7 +15,6 @@ export default function VerifyPage() {
     const digest = sha256(new Uint8Array(arrayBuf
     setHash(digest)
   }
-
   async function verify(
     if (!hash) return alert('Select a file firs
     setStatus('Searching on-chain and via explorer...')
