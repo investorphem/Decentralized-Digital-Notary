@@ -4,7 +4,7 @@ import NotarizeWithContract from './components/NotarizeWithContrac
 import VerifyPage from './components/VerifyPage
 export default function App()
   re
-    <div className="ap
+    <div className="a
       <header
         <h1>Decentralized Digital Notary</h1>
         <p>Hash a file locally and notarize on Stacks (Bitcoin L2).</p>
