@@ -8,26 +8,29 @@ export default function VerifyPage() {
   const [status, setStatus] = useState('')
 
   async function handleFile(e) {
-    const f = e.target.files
-    if (!f) retur
-    setFile(f
-    const arrayBuffer = await f.arrayBuff
-    const digest = sha256(new Uint8Array(arrayB
-    setHash(digest
+    const f = e.target.files[0]
+    if (!f) return
+    setFile(f)
+    const arrayBuffer = await f.arrayBuffer()
+    const digest = sha256(new Uint8Array(arrayBuffer))
+    setHash(digest)
   }
-  async function verify(
-    if (!hash) return alert('Select a fil
-    setStatus('Searching on-chain and via explorer...'
+
+  async function verify() {
+    if (!hash) return alert('Select a file first')
+    setStatus('Searching on-chain and via explorer...')
     setVerifyResult(null)
-    try 
-      // 1) Query the contract read-only map (via StaksAPI) osee if the hash exists in the contract.
-      // Replace CONTRACT_ADDRESS and CONTRACT_NAME as eded
-      const CONTRACT_ADDRESS = 'SP3FBR2AGK2Y3PT1ZQW9...' / replace with deployed contract address
+
+    try {
+      // 1) Query the contract read-only map (via Stacks API) to see if the hash exists in the contract.
+      // Replace CONTRACT_ADDRESS and CONTRACT_NAME as needed.
+      const CONTRACT_ADDRESS = 'SP3FBR2AGK2Y3PT1ZQW9...'; // replace with deployed contract address
       const CONTRACT_NAME = 'notary'
-      // Read-only call via Hiro API to get the map ent
-      const url  `https://stacks-blockchain-api.hiro.so/extended/v1/contracts/call-read/${CONTRACT_ADDRESS}/${CONTRACT_NAME}`
+
+      // Read-only call via Hiro API to get the map entry
+      const url = `https://stacks-blockchain-api.hiro.so/extended/v1/contracts/call-read/${CONTRACT_ADDRESS}/${CONTRACT_NAME}`;
       const body = {
-        "sender": CONTRACT_ADDRESS
+        "sender": CONTRACT_ADDRESS,
         "function_name": "get-notarization",
         "arguments": [
           {
