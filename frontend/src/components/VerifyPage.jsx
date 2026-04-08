@@ -20,7 +20,7 @@ export default function VerifyPage() {
     setStatus('Searching on-chain and via explorer...'
     setVerifyResult(null)
     try {
-      // 1) Query the contract read-only map (via StacksAPI) o see if the hash exists in the contract.
+      // 1) Query the contract read-only map (via StacksAPI) osee if the hash exists in the contract.
       // Replace CONTRACT_ADDRESS and CONTRACT_NAME as needed.
       const CONTRACT_ADDRESS = 'SP3FBR2AGK2Y3PT1ZQW9...'; // replace with deployed contract address
       const CONTRACT_NAME = 'notary'
