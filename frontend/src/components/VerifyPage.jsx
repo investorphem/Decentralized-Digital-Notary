@@ -17,7 +17,7 @@ export default function VerifyPage() {
   }
   async function verify(
     if (!hash) return alert('Select a file firs
-    setStatus('Searching on-chain and via explorer...')
+    setStatus('Searching on-chain and via explorer...'
     setVerifyResult(null)
     try {
       // 1) Query the contract read-only map (via StacksAPI) to see if the hash exists in the contract.
