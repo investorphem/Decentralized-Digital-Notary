@@ -8,7 +8,7 @@ export default function VerifyPage() {
   const [status, setStatus] = useState('')
 
   async function handleFile(e) {
-    const f = e.target.files[0
+    const f = e.target.files[
     if (!f) return
     setFile(f)
     const arrayBuffer = await f.arrayBuffer()
