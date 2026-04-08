@@ -19,7 +19,6 @@ export default function VerifyPage() {
     if (!hash) return alert('Select a file firs
     setStatus('Searching on-chain and via explorer...')
     setVerifyResult(null)
-
     try {
       // 1) Query the contract read-only map (via StacksAPI) to see if the hash exists in the contract.
       // Replace CONTRACT_ADDRESS and CONTRACT_NAME as needed.
