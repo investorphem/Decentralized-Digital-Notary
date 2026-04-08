@@ -5,30 +5,31 @@ import { showConnect, makeSTXTokenTransfer } from '@stacks/connect'
 // NOTE: showConnect / makeSTXTokenTransfer API can vary by version. This code follows common patterns.
 
 export default function NotaryForm() {
-  const [fileName, setFileName] = useState(null
+  const [fileName, setFileName] = useState(null)
   const [hashHex, setHashHex] = useState('')
-  const [txId, setTxId] = useState(null
+  const [txId, setTxId] = useState(null)
   const [status, setStatus] = useState('')
-  async function handleFile(e) 
-    const file = e.target.files
-    if (!file) retu
-    setFileName(file.nam
-    const arrayBuffer = await file.a
-    const bytes = new Uint8Array(arrayBu
-    // compute sha-
-    const digest = sha256(
-    setHashHex(diges
- 
+
+  async function handleFile(e) {
+    const file = e.target.files[0]
+    if (!file) return
+    setFileName(file.name)
+    const arrayBuffer = await file.arrayBuffer()
+    const bytes = new Uint8Array(arrayBuffer)
+    // compute sha-256 hex
+    const digest = sha256(bytes)
+    setHashHex(digest)
+  }
 
   async function notarize() {
-    if (!hashHex) return alert('Please select a file first
-    setStatus('Opening wallet..
+    if (!hashHex) return alert('Please select a file first')
+    setStatus('Opening wallet...')
 
     try {
       const authOptions = {
         // optional
-        appName: 'Decentralized Notary'
-        manifestPath: '/manifest.json
+        appName: 'Decentralized Notary',
+        manifestPath: '/manifest.json'
       }
 
       // showConnect returns wallet session info; this opening might vary by version.
