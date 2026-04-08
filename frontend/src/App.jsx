@@ -3,7 +3,7 @@ import NotaryForm from './components/NotaryForm'
 import NotarizeWithContract from './components/NotarizeWithContrac
 import VerifyPage from './components/VerifyPage
 
-export default function App() 
+export default function App()
   retur
     <div className="app"
       <header
