@@ -27,7 +27,7 @@ export default function VerifyPage() {
       // Read-only call via Hiro API to get the map entr
       const url  `https://stacks-blockchain-api.hiro.so/extended/v1/contracts/call-read/${CONTRACT_ADDRESS}/${CONTRACT_NAME}`;
       const body = {
-        "sender": CONTRACT_ADDRESS,
+        "sender": CONTRACT_ADDRESS
         "function_name": "get-notarization",
         "arguments": [
           {
