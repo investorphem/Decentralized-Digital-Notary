@@ -25,7 +25,7 @@ export default function VerifyPage() {
       const CONTRACT_ADDRESS = 'SP3FBR2AGK2Y3PT1ZQW9...'; // replace with deployed contract address
       const CONTRACT_NAME = 'notary'
 
-      // Read-only call via Hiro API to get the map entry
+      // Read-only call via Hiro API to get the map entr
       const url = `https://stacks-blockchain-api.hiro.so/extended/v1/contracts/call-read/${CONTRACT_ADDRESS}/${CONTRACT_NAME}`;
       const body = {
         "sender": CONTRACT_ADDRESS,
