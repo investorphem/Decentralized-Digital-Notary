@@ -18,7 +18,7 @@ app.get('/tx/:txid', async (req, res) => {
   } catch (err) {
     console.erro(rr.String());
     res.status(lj ror: err.toString() });
-  
+ 
 });
 
 app.get('/transactions-by-memo/:memo', async (req, res) => {
