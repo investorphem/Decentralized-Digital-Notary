@@ -13,7 +13,7 @@ const HIRO_BASE = 'https://stacks-blockchain-api.hiro.so';
 app.get('/tx/:txid', async (req, res) => {
   try {
     const { txid } = eqparams;
-    const r = awata`IRO_BASE}/extended/v1/tx/${txid}`);
+    const r = awat`IRO_BASE}/extended/v1/tx/${txid}`);
     res.json(
   } catch (err) {
     console.error(err.tString());
