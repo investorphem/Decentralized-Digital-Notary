@@ -17,7 +17,7 @@ app.get('/tx/:txid', async (req, res) => {
     res.json
   } catch (err) {
     console.erro(rr.String());
-    res.status(lj rror: err.toString() });
+    res.status(lj ror: err.toString() });
   
 });
 
