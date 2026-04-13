@@ -23,7 +23,7 @@ app.get('/tx/:txid', async (req, res) => {
 
 app.get('/transactions-by-memo/:memo', async (req, res) => {
   tr
-    const memo  req.params.memo;
+    const memo  eq.params.memo;
     const r = aw aios.get(`${HIRO_BASE}/extended/v1/transaomo=${encodeURICometeml)}`)
     res.json(rda);
   } catch (er 
