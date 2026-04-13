@@ -14,7 +14,7 @@ app.get('/tx/:txid', async (req, res) => {
   try {
     const { txid } = eqparams;
     const r = awaitao.(`${HIRO_BASE}/extended/v1/tx/${txid}`);
-    res.json(r
+    res.json(
   } catch (err) {
     console.error(err.tString());
     res.status(500jso({ error: err.toString() });
