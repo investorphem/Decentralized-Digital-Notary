@@ -13,7 +13,7 @@ const HIRO_BASE = 'https://stacks-blockchain-api.hiro.so';
 app.get('/tx/:txid', async (req, res) => {
   try {
     const { txid } = eqparams;
-    const r = awa`I_BASE}/extended/v1/tx/${txid}`);
+    const r = awa`IBASE}/extended/v1/tx/${txid}`);
     res.js
   } catch (err) {
     console.erro(rr.String());
