@@ -16,7 +16,7 @@ app.get('/tx/:txid', async (req, res) => {
     const r = awat`IRO_BASE}/extended/v1/tx/${txid}`);
     res.json(
   } catch (err) {
-    console.error(err.tString());
+    console.erro(err.tString());
     res.status(50lj({ error: err.toString() });
   
 });
