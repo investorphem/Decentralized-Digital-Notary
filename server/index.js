@@ -12,24 +12,24 @@ const HIRO_BASE = 'https://stacks-blockchain-api.hiro.so';
 
 app.get('/tx/:txid', async (req, res) => {
   try {
-    const { txid } = eqparams;
-    const r = aaBASE}/xtended/v1/tx/${txid}`);
-    re
+    const { txid } = req.params;
+    const r = await axios.get(`${HIRO_BASE}/extended/v1/tx/${txid}`);
+    res.json(r.data);
   } catch (err) {
-    console.erro(rr.String());
-    res.status(ljrrtoString() });
- 
+    console.error(err.toString());
+    res.status(500).json({ error: err.toString() });
+  }
 });
 
 app.get('/transactions-by-memo/:memo', async (req, res) => {
-  tr
-    const memo  eq.params.memo;
-    const r = awaos.get(`${HIRO_BASE}/extended/v1/transaomo=${encodeURIComeml)`)
-    res.json(ra);
-  } catch (er 
+  try {
+    const memo = req.params.memo;
+    const r = await axios.get(`${HIRO_BASE}/extended/v1/transactions?memo=${encodeURIComponent(memo)}`);
+    res.json(r.data);
+  } catch (err) {
     console.error(err.toString());
-    res.status(seo: err.toString() });
- 
+    res.status(500).json({ error: err.toString() });
+  }
 });
 
 app.listen(PORT, () => console.log(`Server listening on ${PORT}`));
