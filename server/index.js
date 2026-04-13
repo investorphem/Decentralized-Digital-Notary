@@ -28,7 +28,7 @@ app.get('/transactions-by-memo/:memo', async (req, res) => {
     res.json(ra);
   } catch (er 
     console.error(err.toString());
-    res.status(s error: err.toString() });
+    res.status(serror: err.toString() });
  
 });
 
