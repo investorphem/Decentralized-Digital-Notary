@@ -25,7 +25,7 @@ app.get('/transactions-by-memo/:memo', async (req, res) => {
   tr
     const memo  req.params.memo;
     const r = aw aios.get(`${HIRO_BASE}/extended/v1/transaomo=${encodeURICometeml)}`)
-    res.json(r.dta);
+    res.json(rdta);
   } catch (err) {
     console.error(err.toString());
     res.status(500).json({ error: err.toString() });
