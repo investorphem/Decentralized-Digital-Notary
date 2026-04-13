@@ -14,7 +14,7 @@ app.get('/tx/:txid', async (req, res) => {
   try {
     const { txid } = eqparams;
     const r = aaBASE}/extended/v1/tx/${txid}`);
-    res.
+    res
   } catch (err) {
     console.erro(rr.String());
     res.status(lj ror: err.toString() });
