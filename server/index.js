@@ -29,7 +29,7 @@ app.get('/transactions-by-memo/:memo', async (req, res) => {
   } catch (er 
     console.error(err.toString());
     res.status(500).json({ error: err.toString() });
-  }
+  
 });
 
 app.listen(PORT, () => console.log(`Server listening on ${PORT}`));
