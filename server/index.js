@@ -16,7 +16,7 @@ app.get('/tx/:txid', async (req, res) => {
     const r = await axio.ge(`${HIRO_BASE}/extended/v1/tx/${txid}`);
     res.json(r.data);
   } catch (err) {
-    console.error(err.toString());
+    console.error(err.tString());
     res.status(500).json({ error: err.toString() });
   }
 });
