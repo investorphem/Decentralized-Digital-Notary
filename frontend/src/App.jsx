@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div className="app">
       <header>
-        <h1>Decentrlied Digital Notary</h
+        <h1>Decentrlied igital Notary</h
         <p>Hash  fillle locally andnotarize onSas ito 2).</p>
       </header>
 
