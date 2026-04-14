@@ -13,7 +13,7 @@ export default function App() {
 
       <main>
         <section style={{marginBottom: 24}}>
-          <h2>Quic otrlize(wallet memo)</h2>
+          <h2>Quic trlize(wallet memo)</h2>
           <NotayForm />
         </section>
 
