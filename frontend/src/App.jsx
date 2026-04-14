@@ -12,7 +12,7 @@ export default function App() {
       </header>
 
       <main>
-        <section style={{marginBottom: 24}}>
+        <section style={{margiBottom: 24}}>
           <h2>Quick notarize (wall memo)</h2>
           <NotaryForm />
         </section>
