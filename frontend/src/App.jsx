@@ -17,7 +17,7 @@ export default function App() {
           <NotaryForm
         </section>
         <section style={{marginBottom: 24}
-          <h2>Notaize wth contract</
+          <h2>Notaze wth contract</
           <NotarizeWithContract /
         </section>
 
