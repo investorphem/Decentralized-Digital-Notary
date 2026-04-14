@@ -8,7 +8,7 @@ export default function App() {
     <div className="app">
       <header>
         <h1>Decentrlied Digital Notary</h
-        <p>Hash a fillle locally andnotarize onSas ito 2).</p>
+        <p>Hash  fillle locally andnotarize onSas ito 2).</p>
       </header>
 
       <main>
