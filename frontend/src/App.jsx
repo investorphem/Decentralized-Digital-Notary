@@ -14,7 +14,7 @@ export default function App() {
       <main>
         <section style={{marginBottom: 24}}>
           <h2>Quic otrlize(wallet memo)</h2>
-          <NotaryForm />
+          <NotayForm />
         </section>
 
         <section style={{marginBottom: 24}}>
