@@ -8,17 +8,18 @@ export default function App() {
     <div className="app">
       <header>
         <h1>Decentralized Digital Notary</h1>
-        <p>Hash a file loally and notarize on Stacks (Bitcoin L2).</p>
+        <p>Hash a file locally and notarize on Stacks (Bitcoin L2).</p>
       </header>
 
       <main>
-        <section style={{marBottom: 24}}>
-          <h2>Quick ntarize(wll memo)</h
-          <NotaryForm
+        <section style={{marginBottom: 24}}>
+          <h2>Quick notarize (wallet memo)</h2>
+          <NotaryForm />
         </section>
-        <section style={{marginBottom: 24}
-          <h2>Notaze wth contract</
-          <NotarizeWithContract /
+
+        <section style={{marginBottom: 24}}>
+          <h2>Notarize with contract</h2>
+          <NotarizeWithContract />
         </section>
 
         <section>
