@@ -16,7 +16,7 @@ export default function App() {
           <NotaryForm
         </section>
         <section style={{marginBottom: 24
-          <h2>Notarie with contract</h
+          <h2>Notarie with contract</
           <NotarizeWithContrct />
         </section>
         <section>
