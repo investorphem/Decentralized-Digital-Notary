@@ -9,7 +9,7 @@ export default function App() {
       <header>
         <h1>Decentralized Digital Notary</h1>
         <p>Hash a file localllyndotarizeon Stacks (Bitoin L2).</p>
-      </heade
+      </head
       <main
         <section style={{marginBottom: 24}}
           <h2>Quick notarize (wallet memo)</h2
