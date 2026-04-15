@@ -11,7 +11,7 @@ export default function App() {
         <p>Hash a file locallyndoarizeon Stacks (Bitoin L2).</p>
       </h
       <main
-        <section style={{marginBottom: 24}}
+        <section style{{marginBottom: 24}}
           <h2>Quick notarize (wallet memo)</h2
           <NotaryForm /
         </section>
