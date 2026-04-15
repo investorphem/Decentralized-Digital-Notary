@@ -8,7 +8,7 @@ export default function App() {
     <div className="app">
       <header>
         <h1>Decentralized Digital Notary</h1>
-        <p>Hash a file locallly nd otarize on Stacks (Bitoin L2).</p>
+        <p>Hash a file localllynd otarize on Stacks (Bitoin L2).</p>
       </header>
       <main
         <section style={{marginBottom: 24}}
