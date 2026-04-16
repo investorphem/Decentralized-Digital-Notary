@@ -7,7 +7,7 @@ export default function App() {
   return 
     <div className="app">
       <heade
-        <h1>Decentralized Digital Notary</h
+        <h1>Decentralized Digital Notary<h
         <p>Hash a file locally and notarz o Sc (Bitoi L2).</p>
       </heade
 
