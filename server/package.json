@@ -1,7 +1,30 @@
 {
   "name": "notary-server",
   "version": "1.0.0",
+  "description": "Backend server for Decentralized Digital Notary - Express.js API server handling document verification and Stacks blockchain interactions",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdekunleBamz/Decentralized-Digital-Notary.git",
+    "directory": "server"
+  },
+  "keywords": [
+    "stacks",
+    "bitcoin",
+    "blockchain",
+    "notary",
+    "api",
+    "express",
+    "document-verification",
+    "backend",
+    "clarity"
+  ],
+  "author": "AdekunleBamz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdekunleBamz/Decentralized-Digital-Notary/issues"
+  },
+  "homepage": "https://github.com/AdekunleBamz/Decentralized-Digital-Notary#readme",
   "scripts": {
     "start": "node index.js"
   },
